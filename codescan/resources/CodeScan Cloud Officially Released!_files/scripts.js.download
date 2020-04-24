@@ -1,0 +1,247 @@
+function setActiveMenu(){
+    var pathname = window.location.pathname;
+    $(".nav-item a").each(function(a , b){
+        var as = b.pathname.split("/");
+        var bs = pathname.split("/");
+        if (as.length > 1 && bs.length > 1 && as[1].length && as[1] == bs[1] && b.target !== "_blank") {
+            $(b).parent().addClass('active');
+            return;
+        }
+    });    
+
+    $(".nav-item").on("click", function(elem){
+      enableActive=true;
+        $(elem.target, "a").each(function(a, b){
+          if ( b.target == "_blank"){
+            enableActive=false;
+            return;
+          }
+        });
+
+        if (!enableActive)
+          return;
+
+        $(".nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+     });    
+}
+
+function initializeJS() {
+    setActiveMenu();
+    jQuery('#quickReport #quickForm').on('submit', function(){
+        var envType = $('#quickReport  input:radio:checked').val();
+        if ( envType === "custom" ) {
+         jQuery('#quickReport #hostField').val(jQuery('#quickReport #customDomainText').val());
+       } else {
+	     jQuery('#quickReport #hostField').val(envType);
+       }
+    });
+    
+    jQuery('#quickReport #termsAndServices').on('change', function(){
+		jQuery('#quickReport #submitButton').prop('disabled', !jQuery(this).prop('checked'));
+    });
+
+    $('#quickReport .form-check-input').on("change", function(){
+        if ( $(this).val() === "custom" ) {
+            $('#customDomainText').show();
+        }else {
+            $('#customDomainText').hide();
+        }
+    });
+
+    //sidebar dropdown menu
+    jQuery('#sidebar .sub-menu > a').click(function () {
+        // Close previous open submenu
+        var last = jQuery('.sub.open', jQuery('#sidebar'));
+        jQuery(last).slideUp(200);
+        jQuery(last).removeClass("open");
+        jQuery('.menu-arrow', jQuery(last).parent()).addClass('fa-angle-right');
+        jQuery('.menu-arrow', jQuery(last).parent()).removeClass('fa-angle-down');
+
+        // Toggle current submenu
+        var sub = jQuery(this).next();
+        if (sub.is(":visible")) {
+            jQuery('.menu-arrow', this).addClass('fa-angle-right');
+            jQuery('.menu-arrow', this).removeClass('fa-angle-down');
+            sub.slideUp(200);
+            jQuery(sub).removeClass("open")
+        } else {
+            jQuery('.menu-arrow', this).addClass('fa-angle-down');
+			jQuery('.menu-arrow', this).removeClass('fa-angle-right');
+            sub.slideDown(200);
+            jQuery(sub).addClass("open")
+        }
+
+        // Center menu on screen
+        var o = (jQuery(this).offset());
+        diff = 200 - o.top;
+        if(diff>0)
+            jQuery("#sidebar").scrollTo("-="+Math.abs(diff),500);
+        else
+            jQuery("#sidebar").scrollTo("+="+Math.abs(diff),500);
+    });
+
+
+    // sidebar menu toggle
+    jQuery(function() {
+        function responsiveView() {
+            var wSize = jQuery(window).width();
+            if (wSize <= 768) {
+                jQuery('#container').addClass('sidebar-close');
+                jQuery('#sidebar > ul').hide();
+            }
+
+            if (wSize > 768) {
+                jQuery('#container').removeClass('sidebar-close');
+                jQuery('#sidebar > ul').show();
+            }
+        }
+        jQuery(window).on('load', responsiveView);
+        jQuery(window).on('resize', responsiveView);
+    });
+
+    jQuery('.toggle-nav').click(function () {
+        toggleMenu();
+    });
+
+    jQuery('#signup-error #try-again').click(function(){
+        showSignupSection('main');
+    })
+    jQuery('#signup-main #signup-form').submit(function(){
+        event.preventDefault();
+        // target = 'http://localhost/_codescan/signup/createuser';
+        target = 'https://app.codescan.io/_codescan/signup/createuser';
+        showSignupSection("loading");
+
+        var formData = {
+            email: jQuery("#signup-main #emailInput2").val(),
+            name: jQuery("#signup-main #nameInput2").val(),
+            password: jQuery("#signup-main #passwordInput").val()
+        };
+        jQuery.ajax({
+            type: "POST",
+            url: target,
+            data: JSON.stringify(formData),
+            dataType: "json",
+            contentType: "application/json",
+            success: function(){
+                showSignupSection('message');
+            },
+            error: function(error,a, b){
+                var msg;
+                showSignupSection("error")
+                if (error.responseJSON ) {
+                    if ( error.responseJSON.error )
+                        msg = error.responseJSON.error;
+                    else
+                        msg = "An unknown error was returned";
+                } else if (error.request) {
+                    msg = "An error occured making the request...";
+                } else {
+                    msg = "An error occurred while preparing to make the request";
+                }
+                $("#signup-error #signup-error-message").text(msg);
+            }
+          });
+    });
+    
+    jQuery('#support-form').submit(function(){
+        if ( jQuery('#support-form #00N1I00000MItWG').is(':checked') ){
+              jQuery.post({
+                url: "https://app.codescan.io/_codescan/email/preferences",
+                data: JSON.stringify({
+                    "pref": {
+                        "Opt_In": true,
+                        "email": jQuery('#support-form #email').val()
+                    }
+                })
+              });
+        }
+    });
+
+    var prefix = '#signup-error.';
+    if ( window.location.hash.startsWith(prefix) ){
+        var msg = decodeURIComponent(window.location.hash.substring(prefix.length)).replace(/\+/g, " ");
+        if ( msg === '' )
+            msg = 'An unknown error occurred';
+        showSignupSection('error');
+        $("#signup-error #signup-error-message").text(msg);
+    }
+
+}
+
+function toggleMenu(){
+    if (jQuery('#sidebar > ul').is(":visible") === true) {
+        jQuery('#main-content').css({
+            'margin-left': '0px'
+        });
+        jQuery('#sidebar').hide();
+        jQuery('#sidebar > ul').hide();
+        jQuery("#container").addClass("sidebar-closed");
+    } else {
+        jQuery('#sidebar').show();
+        jQuery('#main-content').css({
+            'margin-left': '180px'
+        });
+        jQuery('#sidebar > ul').show();
+        jQuery('#sidebar').css({
+            'margin-left': '0'
+        });
+        jQuery("#container").removeClass("sidebar-closed");
+    }
+}
+
+function showSignupSection(name){
+    $("#signup-main").hide();
+    $("#signup-message").hide();
+    $("#signup-error").hide();
+    $("#signup-loading").hide();
+
+    $("#signup-" + name).show();
+}
+
+function initRoiCalculator(){
+  $('#roi-estimator-input').keypress(function (e) {
+    var key = e.which;
+    if( key == 13 )  {
+      $('#roi-estimator-button').click();
+      return false;  
+    }
+    return true;
+  }); 
+
+  $('#roi-estimator-button').click(function(){
+    estimateROI();
+  });
+
+}
+
+function estimateROI() {
+  $('#row-calculator-result-row').hide();
+  var numDevelopers = Math.floor(Number($('#roi-estimator-input').val()));
+  if ( numDevelopers<1 )
+    return;
+
+  var savingsPerDay=0.9;
+  var avgWorkingDays=21.75;
+  var hours = addCommas(Math.round(numDevelopers * savingsPerDay*avgWorkingDays));
+  if ( hours ) {
+    $('#roi-estimator-input').val(numDevelopers);
+    $('#row-calculator-hours').text(hours);
+    $('#row-calculator-result-row').show();
+  }
+}
+
+function addCommas(nStr){
+  nStr += '';
+  var x = nStr.split('.');
+  var x1 = x[0];
+  var x2 = x.length > 1 ? '.' + x[1] : '';
+  var rgx = /(\d+)(\d{3})/;
+  while (rgx.test(x1)) {
+      x1 = x1.replace(rgx, '$1' + ',' + '$2');
+  }
+  return x1 + x2;
+}
+
+jQuery(document).ready(initializeJS);
