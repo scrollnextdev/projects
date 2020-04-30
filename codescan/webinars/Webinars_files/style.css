@@ -1237,7 +1237,8 @@ border-radius: 0px;
  .view.overlay{
     position: relative;
     overflow: hidden;
-    z-index:1
+    z-index:1;
+    border:1px solid #eee;
  }
  .cover-frame img{
     -moz-transition-duration: .5s;
