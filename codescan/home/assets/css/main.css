@@ -22,13 +22,15 @@ input, textarea, button { -webkit-appearance: none; -webkit-font-smoothing: anti
 input[type="radio"] { -webkit-appearance: radio; }
 input[type="checkbox"] { -webkit-appearance: checkbox; }
 .navbar-brand img{ height: 42px; }
-.navbar-light .navbar-nav .nav-link{ color: #ffffff; }
-.navbar-light .navbar-nav .nav-link:hover{ color: #3664ee; }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .nbaavr-nav .navlink-.show, .navbar-light .navbar-nav .show>.nav-link{ color: #3664ee; }
+.navbar-light .navbar-nav .nav-link{ color: rgba(255,255,255,0.6); }
+.navbar-light .navbar-nav .nav-link:hover{ color:rgba(255,255,255,1); }
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .nbaavr-nav .navlink-.show, .navbar-light .navbar-nav .show>.nav-link{ color:rgba(255,255,255,1); }
 header .navbar-expand-lg .navbar-nav .nav-link{ font-size: 0.9rem; }
 .nav-link.schedule_demo_link {
     color: #fff !important;
-    border: 1px solid #fff;
+    border: 2px solid #ec5252;
+	background:#ec5252;
+	margin-left:20px;
 }
 #banner{background: #101d2d; padding: 1rem 0px;}
 #banner .row{ align-items: center; }
@@ -72,6 +74,25 @@ header .navbar{ background: #101d2d; }
     border-radius: 0;display: inline-block; 
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.Get_Started {
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #ec5252;
+    border: 1px solid #ec5252;
+    padding: .8rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;display: inline-block; 
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 .banner_sub_head{ color: #ffffff; }
 .banner_sub_head {
     color: #ffffff;
@@ -120,11 +141,17 @@ section{ padding: 3rem 0px; }
     color: #000 !important;
      text-decoration: none !important;
 }
+.Get_Started:hover {
+    background: #cc3e33 !important;
+    color: #fff !important;
+     text-decoration: none !important;
+	 border:1px solid #cc3e33;
+}
 .nav-link.schedule_demo_link:hover {
     color: #fff !important;
-    background: #fff !important;
-    color: #000 !important;
+    background: #cc3e33 !important;
     text-decoration: none !important;
+	border:2px solid #cc3e33 !important;
     
 }
 /* end fix */
@@ -242,27 +269,35 @@ h2.heading span:after {
 
 .scan-content h3 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     padding: 0 10px;
 }
 .scan-content p {
     font-size: 15px;
 }
-
+.scan-content img
+{
+	width:60%;
+}
 section.feature {
-    background: #101d2d;
+    background: #232f45;
     padding: 60px 0;
 }
 
-section.feature h2.heading {
+section.feature h2.heading,section.tech-debt h2.heading {
     text-align: center;
     color: #fff;
     margin-bottom: 40px;
 }
+section.tech-debt h2.heading
+{
+	color:#000;
+	    margin-bottom: 60px;
+}
 
 section.feature .table-feature {
-    background: #fff;
+    background: #2e4162;
     padding: 30px;
 }
 
@@ -272,22 +307,29 @@ section.feature .table-feature table {
 
 section.feature .table-feature table th {
     padding: 10px;
-    background: #4472c4;
+    /* background: #4472c4; */
     color: #fff;
     font-weight: 600;
+	text-align:center;
 }
 
-section.feature .table-feature table tr:nth-child(2n+2) {
-    background: #f5f7fe;
-}
+/* section.feature .table-feature table tr:nth-child(2n+2) { */
+    /* background: #f5f7fe; */
+/* } */
 
 section.feature .table-feature table td {
     padding: 10px;
-    border: 1px solid #eee;
+    color: #ec5262;
+    text-align: center;
+    /* border: 1px solid #eee; */
+ 
 }
 
 section.feature .table-feature table td:first-child {
     border-left: none;
+	text-align: left;
+	color:#fff;
+	font-weight: normal;
 }
 section.feature .table-feature table td:last-child {
     border-right: none;
