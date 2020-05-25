@@ -11,7 +11,7 @@ html { font-family: 'Asap', sans-serif; -webkit-text-size-adjust: 100%; -ms-text
 body {font-family: 'Asap', sans-serif; position: relative;-webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-weight: 400; }
 [tabindex="-1"]:focus { outline: 0 !important; }
 a { -moz-outline-style: none; outline: none; outline: 0; }
-textarea:focus, input:focus { outline: none; }
+textarea:focus, input:focus { outline: none;}
 button:focus { outline: none; }
 *:focus, *:active, a:active, a:focus, input:focus, input:active { -moz-outline-style: none; outline: none; outline: 0; text-decoration: none !important; }
 a, img { text-decoration: none; border: none; }
@@ -236,11 +236,11 @@ section.codescan {
     margin-bottom: 45px;
 }
 
-h2.heading span {
+.heading span {
     position: relative;
 }
 
-h2.heading span:before {
+.heading span:before {
     content: "";
     position: absolute;
     left: -20px;
@@ -250,7 +250,7 @@ h2.heading span:before {
     border-left: 1px solid #ccc;
     border-top: 1px solid #ccc;
  }
-h2.heading span:after {
+.heading span:after {
     content: "";
     position: absolute;
     right: -20px;
@@ -300,7 +300,10 @@ section.feature .table-feature {
     background: #2e4162;
     padding: 30px;
 }
-
+section.feature.price_feature .table-feature{
+    background: transparent;
+    padding: 0;
+}
 section.feature .table-feature table {
     width: 100%;
 }
@@ -323,6 +326,14 @@ section.feature .table-feature table td {
     text-align: center;
     /* border: 1px solid #eee; */
  
+}
+section.feature.price_feature .table-feature table th{
+    text-align:left;
+}
+section.feature.price_feature .table-feature table td{
+    text-align:left;
+    background: #2e4162;
+    color: #fff;
 }
 
 section.feature .table-feature table td:first-child {
@@ -623,4 +634,243 @@ section.footer p a {
     height: 24px;
     top: 9px;
     z-index: 1;
+}
+
+/* Pricing page */
+
+.price_banner {
+    padding: 60px 0 30px;
+    color: #fff;
+}
+.price_banner h1{
+    margin-bottom: 20px;
+}
+section.price_sec01 {
+    padding-top: 100px;
+    position: relative;
+}
+
+.price_sec01:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 332px;
+    background: #101d2d;
+}
+
+.price_plans {
+    padding: 30px 10px;
+    box-shadow: 1px 0 5px -1px #ccc;
+    border-radius: 4px;
+    background: #fff;
+    text-align: center;
+}
+
+.price_plans h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.price_plans h2:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #1d286f;
+    width: 75px;
+    margin: auto;
+}
+
+.price_plans h3 {
+    color: #1d286f;
+    font-size: 54px;
+    font-weight: 700;
+    min-height: 80px;
+}
+
+.price_plans h3 sup {
+    font-size: 21px;
+    top: -20px;
+    margin-right: 2px;
+}
+
+.price_plans h3 sub {
+    font-size: 16px;
+    bottom: 0;
+    text-transform: capitalize;
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+.price_plans h3 span {
+    display: block;
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+}
+.price_plans h3 span.contact-price {
+    font-size: 20px;
+    padding: 25px 0;
+}
+.price_plans p a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 30px;
+    border: 1px solid #1d286f;
+    text-transform: uppercase;
+    color: #1d286f;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.price_plans p a:hover {
+    background: #1d286f !important;
+    color: #fff !important;
+}
+.price_plans ul {
+    list-style: none;
+    padding: 20px 0 12px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    max-width: 200px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.price_plans ul li {
+    padding:0 0 7px 30px;
+    background: url('../img/check-blue.png') no-repeat;
+    background-position: left top;
+    font-weight: 500;
+}
+.highlighted{
+    z-index:2;
+}
+.highlighted .price_plans{
+    margin:-90px -32px 0;
+    background: #1d286f;
+    box-shadow: 0 0 5px -1px #1d286f;
+}
+
+.highlighted .price_plans h2 {
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.highlighted .price_plans h2:before {
+    background: #fff;
+    height: 3px;
+    width: 100px;
+}
+
+.highlighted .price_plans p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.highlighted .price_plans h3 {
+    color:#fff;
+    font-size: 75px;
+}
+.highlighted .price_plans h3 span{
+    color:#fff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.highlighted .price_plans p a {
+    background:#fff;
+    color: #1d286f;
+    border-color:#fff;
+}
+
+.highlighted .price_plans ul {
+    border-color: #fff;
+    padding: 27px 0 20px;
+    max-width: 250px;
+}
+
+.highlighted .price_plans ul li {
+    background-image: url('../img/check-white.png');
+    color: #fff;
+    font-size: 20px;
+    padding-left: 35px;
+}
+
+
+.highlighted .price_plans h3 sup {
+    font-size: 30px;
+    top: -30px;
+    font-weight: 500;
+}
+
+.highlighted .price_plans h3 sub {
+    font-size: 18px;
+}
+
+ul.price-bottom {
+    padding: 40px 17px 0;
+    list-style: square;
+}
+section.faq_sec h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.faq-content {
+    box-shadow: 0 0 7px -2px #ccc;
+    margin-bottom: 20px;
+}
+
+.faq-content h3 {
+    padding: 15px;
+    padding-left: 65px;
+    margin-bottom: 0;
+    font-size: 16px;    
+    background: url('../img/faq-icon.jpg') no-repeat;
+    background-position: left top;
+    cursor: pointer;
+}
+
+.faq-content .faq-ans{
+    padding: 15px;
+}
+
+section.shiping-quality {
+    background: #18273b;
+    color: #fff;
+    text-align: center;
+}
+
+section.shiping-quality h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+section.shiping-quality p a {
+    padding: 12px 35px;
+    color: #fff;
+    background: #1d286f;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+section.shiping-quality p a:hover {
+    color: #1d286f;
+    background: #fff;
 }
