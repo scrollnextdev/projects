@@ -8,7 +8,9 @@
   margin: 0px;
   padding: 0px; }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
@@ -22,14 +24,14 @@ a:focus {
   outline: none !important; }
 
 html {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
-  font-family: 'Avenir', sans-serif;
+  font-family: "Avenir", sans-serif;
   position: relative;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
@@ -44,27 +46,37 @@ a {
   outline: none;
   outline: 0; }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none; }
 
 button:focus {
   outline: none; }
 
-*:focus, *:active, a:active, a:focus, input:focus, input:active {
+*:focus,
+*:active,
+a:active,
+a:focus,
+input:focus,
+input:active {
   -moz-outline-style: none;
   outline: none;
   outline: 0;
   text-decoration: none !important; }
 
-a, img {
+a,
+img {
   text-decoration: none;
   border: none; }
 
 img {
   max-width: 100%; }
 
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-f
-input, textarea, button {
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-f input,
+textarea,
+button {
   -webkit-appearance: none;
   -webkit-font-smoothing: antialiased;
   resize: none; }
@@ -86,8 +98,8 @@ input[type="checkbox"] {
     color: #ffffff; }
     #homePage .careers .careers1 h1 {
       color: #032362;
-      padding-top: 25px;
-      font-size: 60px;
+      padding-top: 17px;
+      font-size: 70px;
       font-weight: 600; }
     #homePage .careers .careers1 h2 {
       font-size: 40px; }
@@ -207,14 +219,16 @@ input[type="checkbox"] {
           list-style: square;
           font-size: 14px; }
     #homePage .popularInst .populInside .boxNum {
-      width: 80%;
+      width: 70%;
       margin: 0 auto; }
       #homePage .popularInst .populInside .boxNum .firstIcon {
         background-color: white;
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 0; }
+        border-radius: 0;
+        background-image: url(../../asset/images/white_img.png); }
         #homePage .popularInst .populInside .boxNum .firstIcon h1 {
-          color: #032362; }
+          color: #032362;
+          font-weight: bold; }
         #homePage .popularInst .populInside .boxNum .firstIcon h6 {
           color: #666666;
           text-transform: uppercase;
@@ -223,6 +237,109 @@ input[type="checkbox"] {
       #homePage .popularInst .populInside .boxNum .firstIcon2 {
         transform: scale(1.2);
         margin-top: 40px; }
+      #homePage .popularInst .populInside .boxNum .zindx {
+        z-index: -1; }
+#homePage .testimonial {
+  background-color: #f7f9fd; }
+  #homePage .testimonial .carousel-bg {
+    background-color: none; }
+    #homePage .testimonial .carousel-bg .menSec {
+      margin-top: 90px !important; }
+      #homePage .testimonial .carousel-bg .menSec img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 70px;
+        height: 70px; }
+    #homePage .testimonial .carousel-bg .cImg {
+      width: 100%;
+      display: flex; }
+    #homePage .testimonial .carousel-bg .quote-image {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+      width: 80px; }
+    #homePage .testimonial .carousel-bg .testimonial-style .testimonial-caption-style {
+      font-size: 18px;
+      bottom: 50%;
+      text-shadow: none;
+      top: 10%;
+      margin: 0 auto;
+      width: 60%;
+      background: #032362;
+      padding: 20px 60px;
+      color: white;
+      font-style: italic;
+      text-align: justify;
+      border-radius: 10px; }
+  #homePage .testimonial .testimonial-style .testimonial-authors {
+    font-weight: bold;
+    font-size: 15px;
+    color: #032362;
+    line-height: 30px;
+    margin-top: 15px;
+    font-style: initial; }
+  #homePage .testimonial .testimonial-style .carousel-inner > .item {
+    padding-top: auto;
+    padding-bottom: auto;
+    height: 200px; }
+  #homePage .testimonial .testimonial-style .carousel-indicator .active {
+    background-color: #032362; }
+  #homePage .testimonial .carousel-indicators {
+    bottom: 80px;
+    margin-left: 20%; }
+  #homePage .testimonial .testimonial-style .carousel-indicators li {
+    background-color: #666666;
+    list-style: disc;
+    color: #666666;
+    position: relative;
+    width: 15px;
+    height: 0px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: 0;
+    font-size: 25px; }
+#homePage .pding {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+#homePage .footSec {
+  padding-bottom: 0px;
+  background-color: #032362;
+  color: #ffffff; }
+  #homePage .footSec hr {
+    border-top: 1px solid white; }
+  #homePage .footSec .footFirst img {
+    width: 50%; }
+  #homePage .footSec .footFirst p {
+    font-size: 13px;
+    margin-top: 20px; }
+  #homePage .footSec .footFirst .footIcon a i {
+    background: white;
+    color: #032362;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 50%; }
+  #homePage .footSec .blogSec {
+    font-size: 15px; }
+    #homePage .footSec .blogSec .footCls img {
+      width: 25%; }
+    #homePage .footSec .blogSec .footCls .footCls2 {
+      flex-direction: column; }
+      #homePage .footSec .blogSec .footCls .footCls2 p {
+        margin: 0px; }
+      #homePage .footSec .blogSec .footCls .footCls2 .lastTxt {
+        font-size: 13px;
+        font-weight: 100;
+        opacity: 0.9; }
+  #homePage .footSec .hrCopy {
+    width: 80%;
+    border-top: 2px solid white;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+  #homePage .footSec .footer-copyright {
+    padding-top: 10px;
+    padding-bottom: 30px; }
 
 /*header styles */
 #homePage .mainHome {
