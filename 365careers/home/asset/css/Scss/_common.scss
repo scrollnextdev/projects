@@ -469,3 +469,156 @@ input[type="checkbox"] {
     }
   }
 }
+
+/////////////////////////////////////  courses Page
+
+.course {
+  background-image: url("../../asset/images/courseBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+  .course1 {
+    width: 100%;
+    text-align: center;
+    color: $primaryColor;
+    h1 {
+      background: white;
+      width: 33%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      height: 73px;
+      padding: 15px 0px;
+      margin-top: 118px;
+      font-weight: bold;
+      font-size: 35px;
+    }
+  }
+}
+
+//second sec
+
+.statisticCLs {
+  .static1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    .imgLap {
+      img {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+    }
+
+    .staticHead {
+      padding: 30px;
+      h1 {
+        color: $primaryColor;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 26px;
+      }
+      p {
+        font-size: 14px;
+        text-align: justify;
+      }
+      .btnTransparent {
+        font-size: 13px;
+        color: $primaryColor;
+        background: transparent;
+        border: 1px solid $primaryColor;
+        padding: 7px 60px;
+        border-radius: 0px;
+        font-weight: bold;
+        &:focus {
+          box-shadow: none;
+        }
+        &:hover {
+          background: $primaryColor;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.corpo {
+  width: 80%;
+  margin: 0 auto;
+
+ 
+  .static1 {
+    height: 630px;
+    margin-top: 0px;
+    .imgLap img {
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 6px;
+      height: 257px;
+    }
+    .staticHead {
+      hr {
+        width: 50px;
+        border-top: 1px solid $primaryColor;
+        margin: 0 auto;
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      p {
+        text-align: center;
+      }
+      .blueIcon {
+        img {
+          width: auto;
+          height: 10px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+  .static2 {
+    margin-left: 85px;
+  }
+  .static3 {
+    margin-left: 30px;
+    .staticHead {
+      h1 {
+        font-size: 20px;
+      }
+      // button{
+      //   margin-top: 40px;
+      // }
+    }
+  }
+}
+
+.lastBtn{
+  width: 100%;
+    display: flex;
+  
+    margin-bottom: 70px;
+    button{
+      margin: 0 auto;
+    // width: 20%;
+    font-size: 13px;
+    background: $primaryColor;
+          color: white;
+        
+        border: 0px solid $primaryColor;
+        padding: 7px 60px;
+        border-radius: 0px;
+       
+        &:focus {
+          box-shadow: none;
+        }
+        &:hover {
+          color: $primaryColor;
+          background: transparent;
+          border: 1px solid $primaryColor;
+          font-weight: bold;
+        }
+    }
+}
