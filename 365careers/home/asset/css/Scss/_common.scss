@@ -20,14 +20,14 @@ a:focus {
 }
 
 html {
-  font-family: "Avenir", sans-serif;
+  font-family: "AvenirL", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Avenir", sans-serif;
+  font-family: "AvenirL", sans-serif;
   position: relative;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
@@ -86,9 +86,84 @@ input[type="checkbox"] {
 }
 
 @font-face {
-  font-family: Avenir;
-  src: url("/asset/font/FontsFree-Net-AvenirLTStd-Book.ttf");
+  font-family: AvenirL;
+  src: url("/asset/font/AnyConv.com__AvenirLTStd Black.ttf");
 }
+
+//buttons
+//headerBUtton ROUNDED Transparent
+.btnTransparent {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 30px;
+  padding: 13px 25px;
+  font-weight: 100;
+  &:hover {
+    background: white;
+
+    color: $primaryColor;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+//  ROUNDED BLUE
+.btnTransparent1 {
+  background: $primaryColor;
+
+  display: block;
+  &:hover {
+    border: 1px solid $primaryColor;
+    background-color: transparent;
+    color: $primaryColor;
+  }
+}
+//  square transparent
+
+.btnTransparent3 {
+  font-size: 12px;
+  color: $primaryColor;
+  background: transparent;
+  border: 1px solid $primaryColor;
+  padding: 7px 60px;
+  border-radius: 0px;
+  font-weight: bold;
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    background: $primaryColor;
+    color: white;
+  }
+}
+
+// BLUE SQUARE
+
+.btnBlueSqu4 {
+  margin: 0 auto;
+
+  background: $primaryColor;
+
+  border: 0px solid $primaryColor;
+
+  border-radius: 0px;
+
+  &:hover {
+    color: $primaryColor;
+    background: transparent;
+    border: 1px solid $primaryColor;
+    font-weight: bold;
+  }
+}
+
+//h1,p,h2,h3,h4,h5,h6,button{
+//    font-family: myriad-pro, sans-serif;
+//
+//}
 
 #homePage {
   .careers {
@@ -106,24 +181,6 @@ input[type="checkbox"] {
       }
       h2 {
         font-size: 40px;
-      }
-      .btnTransparent {
-        background: transparent;
-        border: 1px solid white;
-        color: white;
-        text-transform: uppercase;
-        font-size: 13px;
-        border-radius: 20px;
-        padding: 7px 52px;
-        font-weight: 100;
-        &:hover {
-          background: white;
-
-          color: $primaryColor;
-        }
-        &:focus {
-          box-shadow: none;
-        }
       }
     }
   }
@@ -197,25 +254,7 @@ input[type="checkbox"] {
         p {
           text-align: left;
           color: $grayColor;
-        }
-        .btnTransparent {
-          background: $primaryColor;
-          border: 1px solid white;
-          color: white;
-          text-transform: uppercase;
-          font-size: 13px;
-          border-radius: 20px;
-          padding: 7px 52px;
-          font-weight: 100;
-          display: block;
-          &:hover {
-            border: 1px solid $primaryColor;
-            background-color: transparent;
-            color: $primaryColor;
-          }
-          &:focus {
-            box-shadow: none;
-          }
+          font-size:13px;
         }
       }
       .imgLap {
@@ -473,22 +512,27 @@ input[type="checkbox"] {
 /////////////////////////////////////  courses Page
 
 .course {
+  position: relative;
   background-image: url("../../asset/images/courseBanner.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 360px;
+  height: 290px;
   .course1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
     color: $primaryColor;
     h1 {
-      background: white;
-      width: 33%;
+      background-color: white;
+      width: fit-content;
       margin: 0 auto;
       text-transform: uppercase;
-      height: 73px;
-      padding: 15px 0px;
-      margin-top: 118px;
+
+      padding: 15px 25px;
+      // margin-top: 118px;
       font-weight: bold;
       font-size: 35px;
     }
@@ -518,27 +562,11 @@ input[type="checkbox"] {
         color: $primaryColor;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 26px;
+        font-size: 25px;
       }
       p {
-        font-size: 14px;
-        text-align: justify;
-      }
-      .btnTransparent {
         font-size: 13px;
-        color: $primaryColor;
-        background: transparent;
-        border: 1px solid $primaryColor;
-        padding: 7px 60px;
-        border-radius: 0px;
-        font-weight: bold;
-        &:focus {
-          box-shadow: none;
-        }
-        &:hover {
-          background: $primaryColor;
-          color: white;
-        }
+        text-align: justify;
       }
     }
   }
@@ -548,7 +576,6 @@ input[type="checkbox"] {
   width: 80%;
   margin: 0 auto;
 
- 
   .static1 {
     height: 630px;
     margin-top: 0px;
@@ -559,7 +586,7 @@ input[type="checkbox"] {
     }
     .staticHead {
       hr {
-        width: 50px;
+        width: 75px;
         border-top: 1px solid $primaryColor;
         margin: 0 auto;
         margin-bottom: 12px;
@@ -588,37 +615,436 @@ input[type="checkbox"] {
       h1 {
         font-size: 20px;
       }
-      // button{
-      //   margin-top: 40px;
-      // }
     }
   }
 }
 
-.lastBtn{
+.lastBtn {
   width: 100%;
-    display: flex;
-  
-    margin-bottom: 70px;
-    button{
-      margin: 0 auto;
-    // width: 20%;
-    font-size: 13px;
-    background: $primaryColor;
-          color: white;
-        
-        border: 0px solid $primaryColor;
-        padding: 7px 60px;
-        border-radius: 0px;
-       
-        &:focus {
-          box-shadow: none;
-        }
-        &:hover {
-          color: $primaryColor;
-          background: transparent;
-          border: 1px solid $primaryColor;
-          font-weight: bold;
-        }
+  display: flex;
+
+  margin-bottom: 70px;
+}
+
+///////////////////////////////////////////////////////////// COURSES END
+
+/////////////////////////////////////////////////////////////  Social Media Start
+
+.socialMedia {
+  position: relative;
+  color: $whiteColor;
+  background-image: url("../../asset/images/socialBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  //  height: 360px;
+
+  text-align: center;
+  .social1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    font-weight: bold;
+    h1 {
+      font-weight: 700;
+      margin-bottom: 0px;
+      text-transform: uppercase;
     }
+    p {
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+    button {
+      padding: 13px 35px;
+      margin: 0 auto;
+      margin-top: 20px;
+      &:hover {
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+      }
+    }
+  }
+}
+
+//second sec
+
+.social2 {
+  .static1 {
+    .imgLap {
+      img {
+        height: 370px;
+        width: 100%;
+      }
+    }
+    .staticHead {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+.hor {
+  position: relative;
+  .horizonLine {
+    border-top: 2px solid $primaryColor;
+  }
+  img {
+    background: $primaryColor;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//third Sec
+
+.thirdSec {
+  padding: 40px 0px;
+  background-color: #f9f9f9; // skyBluLight COlor
+  .innerPart {
+    width: 80%;
+    margin: 0 auto;
+    .imgLap {
+      img {
+        height: 320px;
+        width: 90%;
+      }
+    }
+    .staticHead {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        color: $primaryColor;
+        font-weight: 700;
+        font-size: 24px;
+      }
+      p {
+        font-size: 13px;
+      }
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+//fourth sec
+
+.fourthSec {
+  padding-top: 50px;
+  background-color: transparent;
+  .FourthHead {
+    margin: 0 auto;
+    width: 100%;
+    h1 {
+      margin-bottom: 20px;
+      color: $primaryColor;
+      font-weight: 700;
+    }
+  }
+  .innerPart {
+    .firstProduct {
+      img {
+        height: 260px;
+      }
+    }
+  }
+}
+
+//fifth sec
+
+.fifthSec {
+  .innerPart {
+    .expertHead {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      button {
+        margin: 0 auto;
+      }
+    }
+    .imgLap {
+      box-shadow: none !important;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+//vedios section
+
+.vediosSec {
+  padding-top: 0px;
+  .innerPart {
+    width: 100%;
+    justify-content: center;
+    .firstProduct {
+      .vCOde {
+        height: 145px;
+      }
+    }
+  }
+}
+
+// businessPage
+
+.businessCls {
+  background-image: url("../../asset/images/Business_banner.png");
+  .course1 {
+    h1 {
+      padding: 15px 10px;
+    }
+  }
+}
+
+// second
+
+.businessCls2 {
+  .static1 {
+    .staticHead {
+      padding: 20px 30px;
+
+      a {
+        color: $primaryColor;
+        font-size: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 45px;
+        img {
+          width: 30px;
+          margin-left: 6px;
+          height: 15px;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}
+
+// third
+
+.businessCls3 {
+  padding-top: 0px;
+  .FourthHead {
+    h1 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 13px;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .expertHead {
+    width: 80%;
+    padding-top: 40px;
+    margin: 0 auto;
+    .imgLap {
+      width: 85%;
+      img {
+        border-radius: 8px;
+        height: 280px;
+      }
+    }
+    .staticHead {
+      h1 {
+        font-size: 19px !important;
+        color: $primaryColor;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 14px;
+        width: 70%;
+        margin-top: 5px;
+      }
+      .dotClss {
+        p {
+          font-size: 12px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// fourth
+
+.bussecPart {
+  padding-top: 40px;
+  .expertHead {
+    .imgLap {
+      width: 100%;
+      img {
+      }
+    }
+    .staticHead {
+      width: 90%;
+    }
+  }
+}
+
+// fifth
+
+.business2019 {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  .static1 {
+    position: relative;
+    .staticHead {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-30%, -50%);
+      p {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      button {
+        margin-top: 30px !important;
+        text-transform: capitalize;
+        font-size: 15px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+// background Image Sec
+
+.busBack {
+  background-image: url("../../asset/images/image.jpg") !important;
+  padding: 80px 0px;
+  padding-bottom: 17%;
+  .expertHead {
+    color: $whiteColor !important;
+    h1 {
+      color: $whiteColor !important;
+      font-size: 22px !important;
+      margin-bottom: 20px;
+    }
+    hr {
+      width: 75px !important;
+      border-top: 1px solid white !important;
+    }
+    h6 {
+      font-size: 18px;
+      width: 70%;
+      margin: 0 auto;
+    }
+    .listSec {
+      padding-top: 20px;
+      position: relative;
+      width: 100%;
+      justify-content: center;
+      .abc {
+        clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+
+        padding: 20px;
+        width: 260px;
+        background: white;
+        position: absolute;
+        left: 41%;
+        top: 50%;
+        transform: translate(-100%, -13%);
+        h2 {
+          color: $primaryColor !important;
+          font-size: 50px;
+          sub {
+            font-size: 14px;
+          }
+        }
+      }
+      .abc2 {
+        clip-path: polygon(17% 0, 98% 0%, 80% 100%, 0% 100%);
+
+        transform: translate(-15%, -13%);
+        width: 300px;
+      }
+      .abc3 {
+        clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+
+        transform: translate(78%, -13%);
+      }
+      h6 {
+        padding-top: 20px;
+        position: absolute;
+
+        top: 107px;
+      }
+    }
+  }
+}
+
+// CATAGORY
+
+.catBanner {
+  background-image: url("../../asset/images/catagory1.png");
+  height: 504px;
+  .course1 {
+    h1 {
+      padding: 55px 260px;
+      font-size: 50px;
+      background-color: #ffffffba;
+    }
+  }
+}
+.similarSec {
+  padding-top: 80px;
+
+  .sectionsone {
+    .firstSec {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      h1 {
+        color: $primaryColor;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      p {
+        margin-top: 25px;
+        font-size: 14px;
+      }
+      a {
+        img {
+          width: 14px;
+          margin-right: 4px;
+        }
+        color: $primaryColor;
+
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.similarSec1 {
+  padding-bottom: 80px;
 }
