@@ -29,7 +29,7 @@ a:focus {
 }
 
 html {
-  font-family: "AvenirL", sans-serif;
+  font-family: "AvenirL_REGULAR", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  font-family: "AvenirL", sans-serif;
+  font-family: "AvenirL_REGULAR", sans-serif;
   position: relative;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
@@ -107,6 +107,11 @@ input[type="checkbox"] {
 @font-face {
   font-family: AvenirL;
   src: url("/asset/font/AnyConv.com__AvenirLTStd Black.ttf");
+}
+
+@font-face {
+  font-family: AvenirL_REGULAR;
+  src: url("/asset/font/FontsFree-Net-AvenirLTStd-Book.ttf");
 }
 
 .btnTransparent {
@@ -903,6 +908,7 @@ input[type="checkbox"] {
   font-size: 19px !important;
   color: #032362;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .businessCls3 .expertHead .staticHead p {
@@ -957,6 +963,19 @@ input[type="checkbox"] {
   text-transform: capitalize;
   font-size: 15px;
   margin: 0 auto;
+}
+
+.business2019 .testimonialArrow .testAcls {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.business2019 .testimonialArrow .testAcls img {
+  margin-left: 20px;
+  width: 50px;
+  height: 30px;
 }
 
 .busBack {
@@ -1014,7 +1033,7 @@ input[type="checkbox"] {
 }
 
 .busBack .expertHead .listSec .abc h2 sub {
-  font-size: 14px;
+  font-size: 19px;
 }
 
 .busBack .expertHead .listSec .abc2 {
@@ -1084,6 +1103,146 @@ input[type="checkbox"] {
 
 .similarSec1 {
   padding-bottom: 80px;
+}
+
+.aboutUs {
+  background-image: url("../../asset/images/aboutBanner.png") !important;
+  position: relative;
+  height: 457px;
+}
+
+.aboutUs .careers1 {
+  width: 305px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.aboutUs .careers1 h1 {
+  text-transform: uppercase;
+  font-size: 30px !important;
+}
+
+.aboutUs .careers1 h2 {
+  font-size: 14px !important;
+  color: black;
+}
+
+.secondAbout {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.secondAbout .test_about1 img {
+  width: 70%;
+}
+
+.ourValues {
+  background-image: url(../../asset/images/backGround1About.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 190px;
+  padding-bottom: 70px;
+}
+
+.ourValues .expertHead h1 {
+  text-transform: uppercase;
+}
+
+.ourValues .expertise1 {
+  width: 80% !important;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.ourValues .expertise1 .firstIcon {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.ourValues .expertise1 .firstIcon img {
+  width: auto;
+  height: 150px !important;
+  background-color: transparent !important;
+}
+
+.ourValues .expertise1 .firstIcon h6 {
+  text-transform: capitalize !important;
+  font-size: 15px !important;
+  color: black !important;
+  padding-top: 0px !important;
+}
+
+.ourMossion {
+  position: relative;
+  padding: 60px 0px !important;
+  height: 432px;
+}
+
+.ourMossion .thirdSecMission {
+  width: 100% !important;
+}
+
+.ourMossion .thirdSecMission .expertHead {
+  width: 45% !important;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  -webkit-transform: translate(-12%, -50%);
+          transform: translate(-12%, -50%);
+}
+
+.ourMossion .thirdSecMission .expertHead h1 {
+  font-size: 30px;
+  color: #032362;
+  font-weight: 300 !important;
+}
+
+.ourMossion .thirdSecMission .expertHead h1 span {
+  font-weight: 600;
+}
+
+.ourMossion .thirdSecMission .imgLap {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.teamSection {
+  padding: 50px 0px;
+}
+
+.teamSection .expertHead h1 {
+  font-size: 30px;
+  color: #032362;
+  font-weight: 300 !important;
+  margin-bottom: 20px;
+}
+
+.teamSection .expertHead h1 span {
+  font-weight: 600;
+}
+
+.teamSection .teamSection1 {
+  width: 90%;
+  margin-top: 40px;
+}
+
+.teamSection .teamSection1 .expertHead img {
+  width: 130px;
+  padding-top: 3px;
+  height: 140px;
+  border: 0.5px solid #0000007a;
+  border-radius: 50%;
+}
+
+.teamSection .teamSection1 .expertHead h6 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #032362;
+  font-weight: 600;
 }
 
 /*header styles */

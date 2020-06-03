@@ -20,14 +20,14 @@ a:focus {
 }
 
 html {
-  font-family: "AvenirL", sans-serif;
+  font-family: "AvenirL_REGULAR", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "AvenirL", sans-serif;
+  font-family: "AvenirL_REGULAR", sans-serif;
   position: relative;
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
@@ -88,6 +88,10 @@ input[type="checkbox"] {
 @font-face {
   font-family: AvenirL;
   src: url("/asset/font/AnyConv.com__AvenirLTStd Black.ttf");
+}
+@font-face {
+  font-family: AvenirL_REGULAR;
+  src: url("/asset/font/FontsFree-Net-AvenirLTStd-Book.ttf");
 }
 
 //buttons
@@ -160,14 +164,9 @@ input[type="checkbox"] {
   }
 }
 
-//h1,p,h2,h3,h4,h5,h6,button{
-//    font-family: myriad-pro, sans-serif;
-//
-//}
-
 #homePage {
   .careers {
-    // background-color: $skyBlueColor;
+   
     background-image: url("../../asset/images/banner_img.jpg");
     background-size: cover;
     padding: 70px 0px;
@@ -216,12 +215,6 @@ input[type="checkbox"] {
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
         padding: 20px;
         img {
-          // width: 70%;
-          // background: blue;
-          // border-radius: 50%;
-          // padding: 10px;
-          // margin: 0 auto;
-          // width: 100%;
           background: $primaryColor;
           height: auto;
           border-radius: 50%;
@@ -875,6 +868,7 @@ input[type="checkbox"] {
         font-size: 19px !important;
         color: $primaryColor;
         text-transform: uppercase;
+        font-weight: 600;
       }
       p {
         font-size: 14px;
@@ -933,6 +927,18 @@ input[type="checkbox"] {
       }
     }
   }
+.testimonialArrow{
+  .testAcls {
+    justify-content: flex-end;
+    margin-top: 20px;
+img{
+  margin-left: 20px;
+  width: 50px;
+  height: 30px;
+}
+  }
+}
+
 }
 
 // background Image Sec
@@ -976,7 +982,7 @@ input[type="checkbox"] {
           color: $primaryColor !important;
           font-size: 50px;
           sub {
-            font-size: 14px;
+            font-size: 19px;
           }
         }
       }
@@ -1047,4 +1053,158 @@ input[type="checkbox"] {
 
 .similarSec1 {
   padding-bottom: 80px;
+}
+
+
+///////////////////////////////////////////////////////////  ABOUT US PAGE
+
+.aboutUs {
+  // background-color: $skyBlueColor;
+  background-image: url("../../asset/images/aboutBanner.png")!important;
+  position: relative;
+  height: 457px;
+  .careers1 {
+   
+    width: 305px;
+    position: absolute;
+    top: 50%;
+   
+    left: 30%;
+    transform: translate(-50%,-50%);
+    h1 {
+      text-transform: uppercase;
+      font-size: 30px !important;
+    }
+    h2 {
+      font-size: 14px!important;
+      color: black;
+    }
+  }
+}
+
+// firstTestimonial
+
+.secondAbout{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .test_about1{
+    img{
+      width: 70%;
+    }
+  }
+}
+
+
+
+// OUR VALUES
+
+.ourValues{
+  background-image: url(../../asset/images/backGround1About.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 190px;
+ 
+  padding-bottom: 70px;
+  .expertHead{
+    h1{
+      text-transform: uppercase;
+    }
+  }
+  .expertise1{
+    width: 80%!important;
+    margin: 0 auto;
+    padding-top: 20px;
+    .firstIcon{
+      box-shadow: none!important;
+      img{
+        width: auto;
+        height: 150px!important;
+      background-color: transparent!important;
+      }
+      
+     h6 {
+        text-transform: capitalize!important;
+        font-size: 15px!important;
+      
+        color: black!important;
+     
+padding-top: 0px!important;
+
+      }
+
+    }
+  }
+}
+
+// ourMossion
+
+.ourMossion{
+  position: relative;
+  padding: 60px 0px!important;
+  height: 432px;
+  .thirdSecMission{
+    width: 100%!important;
+   
+.expertHead{
+  width: 45%!important;
+  position: absolute;
+  top: 34%;
+ 
+  left: 50%;
+  transform: translate(-12%,-50%);
+  h1 {
+    font-size: 30px;
+    color: $primaryColor;
+    font-weight: 300!important;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+.imgLap{
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+  }
+}
+
+
+
+// team section\
+
+
+.teamSection{
+  padding: 50px 0px;
+  .expertHead{
+    h1 {
+      font-size: 30px;
+      color: $primaryColor;
+      font-weight: 300!important;
+      margin-bottom: 20px;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .teamSection1{
+    width: 90%;
+    margin-top: 40px;
+    .expertHead{
+      img{
+        width: 130px;
+        padding-top: 3px;
+        height: 140px;
+        border: 0.5px solid #0000007a;
+        border-radius: 50%;
+      }
+      h6{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        color: $primaryColor;
+        font-weight: 600;
+      }
+    }
+  }
 }
