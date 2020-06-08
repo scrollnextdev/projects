@@ -108,6 +108,44 @@ header .navbar-expand-lg .navbar-nav .nav-link {
   background: #ec5252;
   margin-left: 20px;
 }
+.nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: white!important;
+}
+.dropdown-menu{
+  left: 16px;
+}
+.dropdown-item{
+ text-transform: capitalize;
+ padding: 4px 10px;
+ font-size: 0.9rem;
+    font-weight: 500;
+
+}
+.dropdown>.dropdown-menu {
+  top: 200%;
+  transition: 0.3s all ease-in-out;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  top: 100%;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+
+.dropdown-item:active
+  {
+    background-color: #ec5252;
+  }
+  .dropdown-item:hover
+  {
+    background-color: #ec5252;   
+     color: white;
+  }
+ 
 #banner {
   background: #101d2d;
   padding: 1rem 0px;
@@ -1720,66 +1758,101 @@ font-size: 40px!important;
   .calender img{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
-  .reportCls h1{
-    font-weight: 600;
-    font-size: 34px;
+
+  /* event Page */
+
+  .eventPageCls{
+    padding: 80px 80px;
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
-  .reportCls p{
-    width: 75%;
-  margin: 0 auto;
-  font-weight: 100;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  .event1_img img{
+      position: relative;
   }
- .report1 .codeCls{
-  padding: 53px 50px!important;
- }
- .report1 .codeCls2 h2
- {
-  font-size: 26px!important;
+
+.backgroundGray{
+  width: 180px;
+    height: 455px;
+    position: absolute;
+    background: #eff1ff;
+    z-index: -1;
+    left: -50px;
+    top: -50px;
+}
+.blueDate{
+  background: #333d7d;
+  width: 19%;
+  padding: 0px 8px;
+  color: white;
   font-weight: bold;
- }
- .report1 .codeCls2 ul
- {
-  padding-left: 20px!important;
- }
- .report1 .codeCls2 li
- {
-  color: #007bff;
-  list-style: circle;
- }
- .report1 .codeCls2 li a
- {
-  color: black;
-  font-size: 14px;
-  font-weight: 500;
- }
-.myCheck1{
-  padding-left: 25px;
+  margin-bottom: 5px;
 }
-.myCheck1 label {
-  font-size: 13px;
-  font-weight: 500;
+.blueDate span{
+  font-size: 18px;
 }
-.paaraa{
-  margin-top: 40px!important;
+.backWhiteSec{
+  background: white;
+    padding: 17px;
+    width: 410px;
+    position: relative;
+    z-index: 99;
+    padding-left: 0px;
+}
+.cancelPara{
+color: #333d7d;
+font-weight: 500;
+margin-bottom: 10px;
+}
+.evenParaSec h6{
+  font-size: 42px;
+  font-weight: bold;
+  color: #333d7d;
+
+}
+.evenParaSec {
+  padding-top: 40px!important;
+}
+.evenParaSec .blcPara{
+  margin-top: 5px;
+  width: 80%;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+.evenParaSec .readBtn{
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.readBtn5{
-  padding: 12px 35px;
-  color: #fff;
-  background: #1d286f;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: none;
-  margin-top: 50px;
+.event1_img2{
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
-.readBtn5:hover{
-  background: #fff;
-  color: #1d286f;
-  border: 1px solid #1d286f;
+.event1_img2 .backgroundGray2
+  {
+    top: 80px;
+    right: -50px!important;
+    width: 180px;
+    height: 455px;
+    position: absolute;
+    background: #eff1ff;
+    z-index: -1;
+    left: unset;
 }
-.selectList{
-  list-style: disk!important;
+.evenParaSec2{
+  margin-top: 90px;
+  padding-bottom: 140px;
+}
+.evenParaSec2 .blueDate{
+  margin: 0 auto;
+  margin-right: 0;
+}
+.evenParaSec2 .backWhiteSec{
+  width: 421px;
+  padding-right: 0px;
+  right: 75px;
+  padding-left: 54px;
+}
+.evenParaSec2 .blcPara{
+  padding-left: 38px;
+  width: 100%;
 }
