@@ -54,7 +54,7 @@
     </div>
   </div>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light text-uppercase ">
+<nav class="navbar navbar-expand-lg navbar-light text-uppercase " id="myHeader">
   <div class="container">
     <a class="navbar-brand" href="../index.html">
           <img src="../assets/img/logo.svg" alt="logo">
@@ -127,7 +127,7 @@
       <div class="col-md-12">
       <div class="text-center price_banner">
         <h1 class="heading"><span>Our Product</span></h1>
-        <p class="banner_sub_content">Lorem Ipsum is simply dummy text of the printing</p>
+        <p class="banner_sub_content">Empower your DevOps teams with CodeScan’s leading end-to-end static code analysis solution, designed exclusively for Salesforce.</p>
       </div>
       </div>
     </div>
@@ -144,25 +144,25 @@
         <div class="col-sm-4 selected">
           <div class="product_part">
             <p><img src="../assets/img/product-1.png"></p>
-            <h2 class="headSize">Self Hosted</h2>
-            <p class="paraSize">Check your code for security and quality with the most extensive database for the Salesforce platform.</p>
-            <p><a href="#" class="selectBtn">Read more</a></p>
+            <h2 class="selectheadFnt">Self Hosted</h2>
+            <p class="selectParaFnt">Check your code for security and quality with the most extensive database for the Salesforce platform.</p>
+            <!-- <p><a href="../products/self-hosted.html" class="selectBtn">Read more</a></p> -->
           </div>
         </div>
         <div class="col-sm-4 ">
           <div class="product_part">
             <p><img src="../assets/img/product-1.png"></p>
             <h2 class="headSize"> Cloud</h2>
-            <p class="paraSize">All the benefits of Self Hosted without the need for servers and infrastructure.</p>
-           <br> <p><a href="#" class="unSelectBtn">Read more</a></p>
+            <p class="paraSize">Get all the benefits of our Self Hosted service without the need of servers or internal infrastructure.</p>
+           <p><a href="../products/cloud.html" class="unSelectBtn">Learn More</a></p>
           </div>
         </div>
         <div class="col-sm-4 ">
           <div class="product_part">
             <p><img src="../assets/img/product-1.png"></p>
             <h2 class="headSize">Editor Plugins</h2>
-            <p class="paraSize">Plug in CodeScan to your favorite editor and use real-time feedback as you are typing.</p>
-           <p><a href="#" class="unSelectBtn">Read more</a></p>
+            <p class="paraSize">Plug in CodeScan to your favorite editor and get real-time feedback while you code.</p>
+           <p><a href="#" class="unSelectBtn">Learn More</a></p>
           </div>
         </div>
       </div>
@@ -172,32 +172,35 @@
   <!-- Prices end -->
 
   <section class="workflow">
-    <div class="row">
-      <div class="col-sm-12">
-        <h2 class="text-center">Speed up your workflow</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="heading main_title text-center "><span>Speed Up Your Workflow</span></h2>
+          
+        </div>
+      </div>
+      <div class="row speed-row">
+          <div class="col-sm-4">
+              <div class="flowpart track">
+                  <h4>Track and Control<br> Quality</h4>
+                  <p>Maintain the quality of your code throughout the development process.</p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="flowpart save-time">
+                  <h4>Save Time on Code <br> Reviews </h4>
+                  <p>Customizable quality gates allow you to see your project’s quality in real-time.</p>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="flowpart increase">
+                  <h4>Increase <br> Productivity</h4>
+                  <p>Automate your reviews and focus on things that matter.</p>
+              </div>
+          </div>
       </div>
     </div>
-    <div class="row speed-row">
-        <div class="col-sm-4">
-            <div class="flowpart track">
-                <h4>Track and Control Quality</h4>
-                <p>Maintain the quality of your code throughout development.</p>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="flowpart save-time">
-                <h4>Save Time on Code Reviews </h4>
-                <p>Customizable Quality Gates allow you to see your project's quality at a glance.</p>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="flowpart increase">
-                <h4>Increase Productivity</h4>
-                <p>Automate your reviews and focus on things that matter.</p>
-            </div>
-        </div>
-    </div>
-</section>
+  </section>
 
 
 <section class="disc-sec d-flex">
@@ -206,9 +209,9 @@
       
     	<div class="col-sm-6">
             <div class="pro-content">
-                <h2>Self-Hosted</h2>
-                <p>Install CodeScan on premises within your secured environment.</p>
-                <p>Download the latest version of CodeScan Self Hosted below. Please read the following license before downloading CodeScan.</p>
+                <h2>Self Hosted</h2>
+                <p>Install CodeScan’s software onsite to your secured data hub.</p>
+                <p>You can download the latest version of CodeScan’s Self Hosted solution below. Please review the following license before downloading.</p>
                 <p>By downloading the CodeScan software you agree to these</p>
                 <p><a href="#">Terms of Service</a></p>
             </div>
@@ -225,6 +228,7 @@
     	<div class="col-sm-6 text-right">
             <h2>Self Hosted 4.4.3</h2>
             <div class="pro-descrition">
+              <p><b>CodeScan Includes:</b></p>
                 <ul>
                     <li>New Metadata Rules</li>
                     <li>New Apex Rules</li>
@@ -237,44 +241,128 @@
                     <li>SonarQube 7.9+ Compatible</li>
                 </ul>
                 <p>Please note that if switching from the standard 4.4.3 version you may experience some discrepancy in issues found.</p>
-                <p>This version is NOT compatible with SonarJS 5.2.1.</p>
-                <p><a href="#">Download 4.4.3.1</a></p>
+                <p>This version is NOT compatible with SonarJS 5.2.1.</p><br>
+                <p class="mt-3"><a href="#">Download 4.4.3.1</a></p>
             </div>
         </div>
-    	<div class="col-sm-6 sec-descrition">
+    	<div class="col-sm-6">
             <h2>Self Hosted 4.0 LTS</h2>
             <div class="pro-descrition">
-                <p>A collection of plugins in our LTS versions. Be sure to download both CodeScan and CodeScan Lightning below for complete coverage of your Salesorce project.</p>
-                <p><b>CodeScan includes:</b></p>
+                <p>We offer a collection of plugins in our LTS version. Be sure to download both CodeScan and CodeScan Lightning below for complete coverage of your Salesforce project.</p>
+                <p><b>CodeScan Includes:</b></p>
                 <ul>
-                    <li>New and updated Apex Rules</li>
-                    <li>New and updated VisualForce Rules</li>
+                    <li>New and Updated Apex Rules</li>
+                    <li>New and Updated VisualForce Rules</li>
                     <li>SonarQube 7.1 Compatible</li>
                 </ul>
                 <p><a href="#">Download 4.0.14</a><a href="#">Release Notes</a><a href="#">Installation</a></p>
                 <p><b>CodeScan Lightning includes: </b></p>
                 <ul>
-                    <li>New Lightning focused Javascript rule library</li>
+                    <li>New Lightning Focused Javascript Rule Library</li>
                     <li>New Quality Profiles</li>
-                    <li>In-line Javascript scanning</li>
+                    <li>In-Line Javascript Scanning</li>
                 </ul>
                 <p>Release Date: 12-June-2018</p>
                 <p><a href="#">Download 4.0.14</a><a href="#">Release Notes</a><a href="#">Installation</a></p>
             </div>
         </div>
       </div>
-      <div class="row">
-        <p class="ad-ver-tool text-center"><a href="#">+ Additional versions and tools</a></p>
-      </div>
+    
     </div>
+</section>
+
+<section class="accordianSec">
+<div class="container">
+  <div class="row">
+<div class="addClss text-center">
+<p>
+  Additional versions and tools
+</p>
+</div>
+  </div>
+  <div class="row">
+     
+   
+      <div class="bs-example">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus mr-2"></i>CodeScan Bundler Version 4.3</button>									
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p>A quick-start download to run all required components in one.</p>
+                      <p>Includes:</p>
+                      <ul class="accUL">
+                        <li>SonarQube 7.7</li>
+                        <li>CodeScan 4.3.10</li>
+                        <li>CodeScan for Lightning 4.3.10</li>
+                        <li>Jenkins</li>
+                      </ul>
+                      <p>Release Date: 16-July-2019</p>
+                      <div class="d-flex">
+                        <button type="button" class="btn btn-primary mr-3" data-toggle="button" aria-pressed="false" autocomplete="off">
+                          Download 4.4.3
+                        </button>
+                        <button type="button" class="btn btn-primary mr-3" data-toggle="button" aria-pressed="false" autocomplete="off">
+                          Release Notes
+                        </button>
+                        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                          Installation
+                        </button>
+                      </div>
+                    
+                   
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-plus mr-2"></i> CodeScan Apex Custom Rule Designer Version 5.6.0</button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p>Designer tool to help build XPath Rules in Self-Hosted CodeScan</p>
+                      <p>Release Date: 11-Nov-2017</p>
+                      <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        Download
+                      </button>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    
+    
+    
+            <!-- <div class="dropdown show dropClassSelf">
+              <a class="btn dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                + Additional versions and tools
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div> -->
+          
+          
+          </div>
+</div>
 </section>
 
 <section class="shiping-quality">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2>Start shipping quality code today</h2>
-        <p><a href="#">Get started <i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a></p>
+        <h2>Get quality code today!</h2>
+        <p><a href="../request_a_demo.html">Get started <i class="fa fa-long-arrow-right pl-2" aria-hidden="true"></i></a></p>
       </div>
     </div>
   </div>
@@ -286,16 +374,18 @@
       <div class="col-md-3">
         <h2>Quick Links</h2>
         <ul>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li></ul>
+        <li><a href="../resources_detail.html">Resources</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li></ul>
               </div> 
               
                <div class="col-md-3">
         <h2>Quick Links</h2>
         <ul>
-          <li><a href="../products/cloud.html">Cloud</a></li>
           <li><a href="../products/self-hosted.html">Self Hosted</a></li>
+          
+          <li><a href="../products/cloud.html">Cloud</a></li>
+         
           <li><a href="../products/editor-plugins.html">Editor Plugins</a></li></ul>
                 </div> 
                 
@@ -318,8 +408,9 @@
               
                
   </div>
-  <div class="row w1"><div class="col-md-6"><p class="w4">Copyright 2020 CodeScan Enterprises. All rights reserved.</p></div><div class="col-md-6"><div class="foot_social"><a href="#"><i class="fa fa-facebook-f"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div></div>
+  <div class="row w1"><div class="col-md-6"><p class="w4">Copyright 2020 CodeScan Enterprises. All rights reserved.</p></div><div class="col-md-6"><div class="foot_social"><a href="https://www.facebook.com/CodeScanForSalesforce/"><i class="fa fa-facebook-f"></i></a><a href="https://twitter.com/CodeScanforSFDC"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/company/2812121/admin/"><i class="fa fa-linkedin"></i></a></div></div>
 </section>
+
 
 
 
