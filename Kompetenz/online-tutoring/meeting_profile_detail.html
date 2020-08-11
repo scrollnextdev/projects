@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <!-- font-custom-->
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <!-- font-custom-->
+        <link href="assets/css/style.css" rel="stylesheet" />
+<!--  -->
+
+</head>
+<body>
+  <section class="top_navBar">
+    <div class="container-fluid">
+      <div class="top_navBar2 ">
+    <div class="col-md-12 d-flex">
+    <div class="col-md-6">
+    <div class="d-flex iconsTop1">
+    <a href="#" class="mr-3"><i class="fa fa-envelope pr-2" aria-hidden="true"></i> info@komptenz.com</a>
+    <a href="#"><i class="fa fa-volume-control-phone pr-2" aria-hidden="true"></i> 0124 -4448080</a>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="d-flex iconsTop1 iconsTop">
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+  <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-xs-6 col-lg-2">
+          <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0 logoCls"><img src="./assets/img/logo_kompetenz.png"></a> </h1>
+        </div>
+
+        <div class="col-lg-10 col-md-10 d-none d-lg-block">
+          <nav class="site-navigation position-relative text-right" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block mb-0">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                    <a href="#">Education/Academics</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Interests </a>
+                    <a href="#">Medical </a>
+                    <a href="#">Corporate </a>
+                    <a href="#">IT</a>
+                    </div>
+                </li>
+              <li><a href="features.html" class="nav-link">Trianers</a></li>
+              <li><a href="pricing.html" class="nav-link">Meetings</a></li>
+              <!-- <li><a href="contact.html" class="nav-link">                  </a></li> -->
+              <li><a href="#" class="btn top-btn">SCHEDULE A MEETING</a></li>
+              <li><a href="#" class="btn top-btn active">JOIN A MEETING </a></li>
+              <li><a href="#" class=""><img src="./assets/img/topUserNav.png"></a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+        <div class="col-lg-6 d-inline-block d-lg-none ml-md-0 py-3" style="position: relative; top: 3px;">
+
+          <a href="#" class="burger site-menu-toggle js-menu-toggle" data-toggle="collapse"
+            data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+     
+   
+  <section class="meeting" id="meetingID">
+      
+  <div class="tab meetProfile meetProfitDetail">
+    
+    <!-- <button class="tablinks mt-3" onclick="openCity(event, 'Profile')" >Profile </button> -->
+    <select class="tablinks mt-3 profileImg" onclick="openCity(event, 'Profile')" name="status"><i class="fa fa-users" aria-hidden="true"></i><option value=""><i class="fa fa-users" aria-hidden="true"></i>Profile</option>
+      <option value="free">Free</option>
+      <option value="paid">Paid</option>
+      </select>
+      <select class="tablinks mt-3 meetImg" onclick="openCity(event, 'Meetings')" name="status" id="defaultOpen">
+        <option value="">Meetings</option>
+        <option value="free"> <button class="tablinks" onclick="openCity(event, 'Webinars')"><img src="./assets/img/navLeft2.png" class="mr-1">Schedule a Meeting</button></option>
+        <option value="paid"> <button class="tablinks" onclick="openCity(event, 'Recordings')"><img src="./assets/img/navLeft2.png" class="mr-1">Past Meeting</button></option>
+        <option value="paid"> <button class="tablinks" onclick="openCity(event, 'Join a Meeting')"><img src="./assets/img/navLeft3.png" class="mr-1">Join a Meeting</button></option>
+        </select>
+    <!-- <button class="tablinks" onclick="openCity(event, 'Meetings')" id="defaultOpen" ><i class="fa fa-users" aria-hidden="true"></i>Meetings</button> -->
+    
+    <!-- <button class="tablinks" onclick="openCity(event, 'Webinars')"><img src="./assets/img/navLeft2.png" class="mr-1">Schedule a Meeting</button>
+    <button class="tablinks" onclick="openCity(event, 'Recordings')"><img src="./assets/img/navLeft2.png" class="mr-1">Past Meeting</button>
+    <button class="tablinks" onclick="openCity(event, 'Join a Meeting')"><img src="./assets/img/navLeft3.png" class="mr-1">Join a Meeting</button> -->
+    <button class="tablinks" onclick="openCity(event, 'Invitations')"><img src="./assets/img/navLeft4.png" class="mr-1">Invitations</button>
+ 
+    <select class="tablinks settngs" onclick="openCity(event, 'Settings')" name="status">
+      <option value="">Settings</option>
+      <option value="free">Account</option>
+      <option value="paid">Payment</option>
+      <option value="paid">Notifications</option>
+      </select>
+  
+    <div class="leftAttndLive">
+<a href="#">
+  Attend Live Training
+
+</a>
+<a href="#">
+  Video Tutorials
+
+</a>
+<a href="#">
+  Knowledge Base
+
+</a>
+
+    </div>
+  </div>
+  <div id="Profile" class="tabcontent">
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group d-flex">
+              <div class="col-md-2">
+                <img src="assets/img/meetUser.png">
+                <a href="#" class="chngeMl">change</a>
+               
+              </div>
+              <div class="col-md-4">
+                <lable class="meetProfLable"><b>Nick arora</b></lable>
+              </div>
+              <div class="col-md-6 text-right">
+                <a href="#" class="">Edit</a>
+              </div>
+         
+          </div>
+        </div>
+      </div>
+      
+<hr class="hrClss">
+<div class="row">
+    <div class="col-md-12">
+      <div class="form-group d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Personal Meeting ID</b></lable>
+           
+          </div>
+          <div class="col-md-6">
+            <lable class="meetProfLable">*** *** *451 &nbsp; &nbsp; &nbsp; Show</lable><br>
+            <lable>https://us04web.zoom.us/j/*******451?pwd=******** Show</lable><br>
+            <lable>Use this ID for instant meetings</lable>
+           
+                                                    
+          </div>
+          <div class="col-md-3 text-right">
+            <a href="#" class="">Edit</a>
+          </div>
+     
+      </div>
+    </div>
+  </div>
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Sign-In Email</b></lable>
+         </div>
+          <div class="col-md-6">
+            <lable class="meetProfLable">nic***@scrollnext.com &nbsp; &nbsp; &nbsp; Show</lable><br>
+            <lable>Linked accounts: </lable>
+       </div>
+          <div class="col-md-3 text-right">
+            <a href="#" class="">Edit</a>
+          </div>
+     
+      </div>
+    </div>
+  </div>
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>User Type</b></lable>
+         </div>
+          <div class="col-md-9">
+            
+            <lable>Basic   Upgra</lable>
+       </div>
+         
+     
+      </div>
+    </div>
+  </div>
+ 
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Capacity</b></lable>
+         </div>
+          <div class="col-md-9">
+            
+            <lable>Meeting  100</lable>
+       </div>
+         
+     
+      </div>
+    </div>
+  </div>
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Language</b></lable>
+         </div>
+          <div class="col-md-9">
+            
+            <lable>English</lable>
+       </div>
+         
+     
+      </div>
+    </div>
+  </div>
+
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Date and Time </b></lable>
+         
+         </div>
+         <div class="col-md-3">
+            <lable class="meetProfLable">Time Zone</lable><br>
+            <lable class="meetProfLable">Date Format</lable><br>
+            <lable class="meetProfLable">Time Format</lable>
+         </div>
+         <div class="col-md-4">
+            <lable class="meetProfLable">(GMT+5:30) India</lable><br>
+            <lable class="meetProfLable">mm/dd/yyyy &nbsp; Example: 08/15/2011</lable><br>
+            <lable class="meetProfLable">Use 24-hour time</lable>
+         </div>
+
+         <div class="col-md-2 text-right">
+            <a href="#" class="">Edit</a>
+          </div>
+     
+      </div>
+    </div>
+  </div>
+
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Sign-In Password</b></lable>
+         </div>
+          <div class="col-md-6">
+            
+            <lable>********</lable>
+       </div>
+       <div class="col-md-3 text-right">
+        <a href="#" class="">Edit</a>
+   </div>
+     
+      </div>
+    </div>
+  </div>
+
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Calendar and Contact 
+                Integration</b></lable>
+         </div>
+          <div class="col-md-9">
+            
+            <lable>You can integrate with 3rd party services or apps, such as Google, Outlook or Exchange, to 
+                sync the calendar and contacts.</lable><br>
+               <a href="#"><lable class="connectto">Connect to Calendar and Contact Service</lable>  </a> 
+       </div>
+      
+     
+      </div>
+    </div>
+  </div>
+
+  <hr class="hrClss">
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Host Key</b></lable>
+         </div>
+          <div class="col-md-6">
+            
+            <lable> ********  Sho</lable>
+       </div>
+       <div class="col-md-3 text-right">
+        <a href="#" class="">Edit</a>
+   </div>
+     
+      </div>
+    </div>
+  </div>
+
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 mb-4 d-flex">
+          <div class="col-md-3">
+            <lable class="meetProfLable"><b>Signed-In Device</b></lable>
+         </div>
+          <div class="col-md-9">
+            
+            <lable> Sign Me Out From All Devices </lable>
+       </div>
+     
+     
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  
+  <div id="Meetings" class="tabcontent">
+    <h3>Schedule a Meeting</h3>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group d-flex">
+            <lable class="meetProfLable">Topic</lable>
+            <lable class="meetProfLable">My Meeting</lable>
+            <button type="button" class="btn btn-primary MyMeetingBtn">Start the meeting</button>
+           
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+      </div>
+      
+<hr class="hrClss">
+<div class="row">
+    <div class="col-md-12">
+      <div class="form-group d-flex">
+        <lable class="whenlabel">Time</lable>
+        <lable>Jun 30, 2020 12:00 PM India</lable>
+             
+        
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+  
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group d-flex">
+        <lable class="whenlabel"></lable>
+    
+      
+        <lable class="whenlabel">Add to </lable>
+        <input id="form_name" type="calender" name="name" class="form-control addTooCLss googleC" placeholder="Google Calender" required="required" data-error="Firstname is required.">
+        <input id="form_name" type="calender" name="name" class="form-control addTooCLss OutlookC" placeholder="Outlook Calender " required="required" data-error="Firstname is required.">
+        <input id="form_name" type="calender" name="name" class="form-control addTooCLss YahooC" placeholder="Yahoo Calender" required="required" data-error="Firstname is required.">
+                     
+                
+              
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+  
+  </div>
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+        <lable class="meetProfLable">Meeting</lable>
+        <lable class="meetProfLable"> ID785 4781 2693</lable>   
+      </div>
+    </div>
+  </div>
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+        <lable class="meetProfLable">Meeting  Password</lable>
+        <lable class="meetProfLable">********  Show</lable>   
+      </div>
+    </div>
+  </div>
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+        <lable class="meetProfLable">Invite Link</lable>
+        <lable class="meetProfLable2">https://us04web.zoom.us/j/78547812693?pwd=YVNlRGRKV3ZIL1ZWRVFLUWpaK0xKdz09</lable>   
+      </div>
+    </div>
+  </div>
+  <hr class="hrClss">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+        <lable class="meetProfLable">Video</lable>
+        <lable class="meetProfLable">Host</lable>   
+        <lable class="meetProfLable">Off</lable>   
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+        <div class="form-group meetProfLable1 mt-3 d-flex">
+          <lable class="meetProfLable"></lable>
+          <lable class="meetProfLable">Participant</lable>   
+          <lable class="meetProfLable">Off</lable>   
+        </div>
+      </div>
+  
+  </div>
+  <hr class="hrClss">
+ 
+
+<!--  -->
+
+<!-- check box -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="form-group d-flex ">
+      <lable class="whenlabel2">Duration</lable>
+  <div class="justHost">
+    <div class="d-flex">
+    <!-- Default unchecked -->
+<div class="custom-control custom-checkbox myCheck radiobtn ">
+  <input id="unchecked10" class="custom-control-input" type="checkbox">
+  <label for="unchecked10" class="custom-control-label ">Enable join before host
+     
+ 
+    </label>
+</div>
+
+</div>
+<div class="d-flex">
+ <!-- Default unchecked -->
+<div class="custom-control custom-checkbox myCheck radiobtn ">
+  <input id="unchecked11" class="custom-control-input" type="checkbox">
+  <label for="unchecked11" class="custom-control-label ">Mute participants upon entry</label>
+</div>
+</div>
+<div class="d-flex">
+  <!-- Default unchecked -->
+ <div class="custom-control custom-checkbox myCheck radiobtn ">
+   <input id="unchecked12" class="custom-control-input" type="checkbox">
+   <label for="unchecked12" class="custom-control-label ">   Enable waiting room</label>
+ </div>
+ </div>
+ <div class="d-flex">
+  <!-- Default unchecked -->
+ <div class="custom-control custom-checkbox myCheck radiobtn ">
+   <input id="unchecked13" class="custom-control-input" type="checkbox">
+   <label for="unchecked13" class="custom-control-label "> Record the meeting automatically on the local computer</label>
+ </div>
+ </div>
+    </div>  
+            
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+
+</div>
+<hr class="hrClss">
+<div class="row">
+  <div class="col-md-12">
+    <div class=" d-flex text-center meetProfButtons">
+      <a href="#">Delete this Meeting</a>
+      <a href="#">Save as a Meeting Template</a>
+      <button type="button" class="btn btn-primary MyMeetingBtn2">Edit this meeting</button>
+      <button type="button" class="btn btn-primary MyMeetingBtn3">Start the meeting</button>
+    </div>
+</div>
+</div>
+<hr class="hrClss">
+<div class="row">
+    <div class="col-md-12">
+      <div class="form-group meetProfLable1 d-flex">
+      
+        <lable class="meetProfLable3">Want to invite view-only participants or broadcast the event to up to 10000 participants? Convert this Meeting to a Webinar</lable>   
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div id="Webinars" class="tabcontent">
+    <h3>Webinars</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  
+  <div id="Recordings" class="tabcontent">
+    <h3>Recordings</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="Invitations" class="tabcontent">
+    <h3>Invitations</h3>
+    <p>Invitations is the capital of Japan.</p>
+  </div>
+  <div id="Settings" class="tabcontent">
+    <h3>Settings</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  </section>
+    
+
+   
+  
+   
+     
+               <section class="footer-section">
+            <div class="container">
+                <div class="row">
+                   
+                            <div class="col-md-6"><p>Copyright © 2019 online tutoring. All Rights Reserved.</p></div>
+                            <div class="col-md-6">
+                            <div class="footer_social pull-right">
+                            <ul>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></i></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                            </div>
+                            </div>
+
+                </div>
+            </div>
+     </section>
+     
+     <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<!-- jquery.min.js -->
+<!-- popper.min.js -->
+<script type="text/javascript" src="./assets/js/popper.min.js"></script>
+<!-- popper.min.js -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+ 
+
+
+
+</html>

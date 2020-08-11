@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Profile Edit | Kompitenz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- favicon -->
+ <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- csutom js -->
+
+<script type="text/javascript" src="./assets/js/custom.js"></script>
+     <!-- font-custom-->
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <section class="top_navBar">
+      <div class="container-fluid">
+        <div class="top_navBar2">
+          <div class="col-md-12 d-flex">
+            <div class="col-md-6 pl-0">
+              <div class="d-flex iconsTop1">
+                <a href="#" class="mr-3"
+                  ><i class="fa fa-envelope pr-2" aria-hidden="true"></i>
+                  info@komptenz.com</a
+                >
+                <a href="#"
+                  ><i
+                    class="fa fa-volume-control-phone pr-2"
+                    aria-hidden="true"
+                  ></i>
+                  0124 -4448080</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex iconsTop1 iconsTop">
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+                <a href="#"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header
+    class="site-navbar js-sticky-header site-navbar-target"
+    role="banner"
+  >
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-xs-6 col-lg-2">
+          <h1 class="mb-0 site-logo">
+            <a href="index.html" class="mb-0 logoCls"
+              ><img src="./assets/img/logo_kompetenz.png"
+            /></a>
+          </h1>
+        </div>
+
+        <div class="col-lg-10 col-md-10 d-none d-lg-block">
+          <nav
+            class="site-navigation position-relative text-right"
+            role="navigation"
+          >
+            <ul
+              class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block mb-0"
+            >
+              <li class="dropdown">
+                <a class="rightLine"  href="javascript:void(0)" class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+                  <a href="#">Education/Academics</a>
+                  <a href="#">Sports</a>
+                  <a href="#">Interests </a>
+                  <a href="#">Medical </a>
+                  <a href="#">Corporate </a>
+                  <a href="#">IT</a>
+                </div>
+              </li>
+              <li><a class="rightLine"  href="features.html" class="nav-link">Trianers</a></li>
+              <li><a href="pricing.html" class="nav-link">Meetings</a></li>
+              <!-- <li><a href="contact.html" class="nav-link">                  </a></li> -->
+              <li><a href="#" class="btn top-btn">SCHEDULE A MEETING</a></li>
+              <li>
+                <a href="#" class="btn top-btn active">JOIN A MEETING </a>
+              </li>
+              <li>
+                <a href="#" class=""
+                  ><img src="./assets/img/topUserNav.png"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div
+          class="col-lg-6 d-inline-block d-lg-none ml-md-0 py-3"
+          style="position: relative; top: 3px;"
+        >
+          <a
+            href="#"
+            class="burger site-menu-toggle js-menu-toggle"
+            data-toggle="collapse"
+            data-target="#main-navbar"
+          >
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- center -->
+    <section class="centerPrt">
+      <!-- <div class="container-fluid"> -->
+      <div class="col-md-12 p-0">
+        <div class="d-flex">
+          <div class="col-md-3 p-0" >
+            <div class="leftSIdeTabs profileHei">
+              <ul class="nav nav-tabs">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#home">Profile</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Profile<span class="caret"></span></a>
+                  
+                  <div class="dropdown-menu">
+                   <a  class=" nav-link" data-toggle="tab" href="#profile1">profile1</a>
+                    <a  class=" nav-link" data-toggle="tab" href="#profile2">profile2</a>
+                   <a  class=" nav-link" data-toggle="tab" href="#profile3">profile3</a>
+                  </div>
+               
+                  </li>
+                <li class="nav-item dropdown">
+                
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-users" aria-hidden="true"></i> Meetings<span class="caret"></span></a>
+                  
+                  <div class="dropdown-menu">
+                   <a  class=" nav-link" data-toggle="tab" href="#schedule">Schedule a Meeting</a>
+                    <a  class=" nav-link" data-toggle="tab" href="#past">Past Meeting</a>
+                   <a  class=" nav-link" data-toggle="tab" href="#join">Join a Meeting</a>
+                  </div>
+               
+                  </li>
+                  <!-- dummy -->
+                  <li class="nav-item justDummy">
+                    <a class="nav-link" data-toggle="tab" href="#schedule"><i class="fa fa-calendar" aria-hidden="true"></i>
+                      Schedule a Meeting</a>
+                  </li>
+                  <li class="nav-item justDummy">
+                    <!-- <a class="nav-link" data-toggle="tab" href="#join"><i class="fa fa-user-plus" aria-hidden="true"></i>
+                      Join a Meeting</a> -->
+                      <a class="nav-link" href="./join-meeting.html"><i class="fa fa-user-plus" aria-hidden="true"></i>
+                        Join a Meeting</a>
+                  </li>
+                  <li class="nav-item justDummy active">
+                    <a class="nav-link" data-toggle="tab" href="#upcoming"><i class="fa fa-calendar" aria-hidden="true"></i>
+                      Upcoming Meetings</a>
+                  </li>
+                  <li class="nav-item justDummy ">
+                    <a class="nav-link" data-toggle="tab" href="#past"><i class="fa fa-calendar" aria-hidden="true"></i>
+                      Past Meeting</a>
+                  </li>
+                  <li class="nav-item justDummy">
+                    <a class="nav-link" data-toggle="tab" href="#recordings"><i class="fa fa-user-plus" aria-hidden="true"></i>
+                      Recordings</a>
+                  </li>
+                
+                  <!-- dummy -->
+                  <li class="nav-item dropdown">
+                
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-comments" aria-hidden="true"></i> Messages<span class="caret"></span></a>
+                    
+                    <div class="dropdown-menu">
+                     <a  class=" nav-link" data-toggle="tab" href="#menu7">Inbox</a>
+                      <a  class=" nav-link" data-toggle="tab" href="#menu8">Draft</a>
+                     <a  class=" nav-link" data-toggle="tab" href="#menu9">Sent</a>
+                    </div>
+                 
+                    </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#invitations"><i class="fa fa-envelope-open" aria-hidden="true"></i>
+                     Invitations</a>
+                </li>
+              
+                
+                 <li class="nav-item dropdown">
+                
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings<span class="caret"></span></a>
+                
+                <div class="dropdown-menu">
+                 <a  class=" nav-link" data-toggle="tab" href="#account">Account</a>
+                  <a  class=" nav-link" data-toggle="tab" href="#payment">Payment</a>
+                 <a  class=" nav-link" data-toggle="tab" href="#notifications">Notifications</a>
+                </div>
+             
+                </li>
+
+                   <!-- dummy -->
+                   <li class="nav-item justDummy active">
+                    <a class="nav-link" data-toggle="tab" href="#account"><i class="fa fa-calendar" aria-hidden="true"></i>
+                      Account</a>
+                  </li>
+                 
+                  <li class="nav-item justDummy ">
+                    <a class="nav-link" data-toggle="tab" href="#payment"><i class="fa fa-calendar" aria-hidden="true"></i>
+                      Payment</a>
+                  </li>
+                 
+                  <li class="nav-item justDummy">
+                    <a class="nav-link" data-toggle="tab" href="#notifications"><i class="fa fa-user-plus" aria-hidden="true"></i>
+                      Notifications</a>
+                  </li>
+                
+                  <!-- dummy -->
+                <!-- accordian -->
+
+                <!-- accordian -->
+              </ul>
+              <div class="leftAttndLive">
+                <a href="#">
+                  Attend Live Training
+                
+                </a>
+                <a href="#">
+                  Video Tutorials
+                
+                </a>
+                <a href="#">
+                  Knowledge Base
+                
+                </a>
+                
+                    </div>
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="tabsRightSide">
+              <div class="tab-content">
+                <div id="home" class="container tab-pane "><br>
+                  <h3>HOME</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div id="profile1" class="container tab-pane fade">
+                  <h3>profile1</h3>
+                 <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+               
+               </div>
+                <div id="profile2" class="container tab-pane fade">
+                 <h3>profile2</h3>
+                 <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+               </div>
+               <div id="profile3" class="container tab-pane fade">
+                 <h3>profile3</h3>
+                 <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+               </div>
+                <div id="invitations" class="container tab-pane fade"><br>
+                  <h3>Invitations</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              
+              
+                <div id="schedule" class="container tab-pane fade">
+                   <h3>schedule</h3>
+                  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                
+                </div>
+                 <div id="past" class="container tab-pane fade">
+                  <h3>past</h3>
+                  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div id="join" class="container tab-pane fade">
+                  <h3>join</h3>
+                  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+                <div id="upcoming" class="container tab-pane fade">
+                    <div id="Meetings" >
+                        <div class="container">
+                      <div class="row">
+                        
+                      <div class="col-lg-12 ">
+                          <div class="pastMeetMain">
+                          <div class="pastMeetVideo text-right mt-1 mb-4">
+                              <i class="fa fa-video-camera" aria-hidden="true"></i> <a href="#">Get Training </a>
+                          </div>
+                          <table class="table  ">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Start Time</th>
+                                  <th scope="col">Meeting Topic</th>
+                                  <th scope="col">Meeting ID</th>
+                                  <th scope="col"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td scope="row">Tue, Jun 30 
+                                      <span>12:00</span> PM</td>
+                                  <td>My Meeting 
+                                      <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                  </td>
+                                  <td>785 4781 2693</td>
+                                  <td><button><i class="fa fa-play-circle-o" aria-hidden="true"></i> Start</button>
+                                    <button type="button"  data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Invite </button>
+                                    <button class="active"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+                                  
+                                  </td>
+                                </tr>
+                                <div class="modal inviteMOdel" id="myModal">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    
+                                      <!-- Modal Header -->
+                                      <div class="modal-header">
+                                     <button class="copyClss">Copy Meeting Invitation</button>
+                                        <button type="button" class="close crossBtn" data-dismiss="modal">&times;</button>
+                                      </div>
+                                      
+                                      <!-- Modal body -->
+                                      <div class="modal-body">
+                                       <p class="modelTopPara">Meeting Invitation</p>
+                                       <p class="grayModel">
+                                          Nick arora is inviting you to a scheduled Kompetenz meeting.
+                      <br><br>
+                                          Topic: Nick arora's Personal Meeting Room
+                                          <br>
+                                          <br>
+                                          Join kompetenz  Meeting
+                                          https://us04web.us/j/8916654451?pwd=OHpTc3dBb1pPbzhMcXRobDk4ckdVZz09
+                                          <br>
+                                          <br>
+                                          Meeting ID: 891 665 4451
+                                          <br>
+                                          Password: 7kKfRL
+                                       </p>
+                                      </div>
+                                      
+                                      <!-- Modal footer -->
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn cancelBtn copyFoot" >Copy Meeting Invitation</button>
+                                        <button type="button" class="btn cancelBtn" data-dismiss="modal">Cancel</button>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                <tr>
+                                  <td scope="row">Tue, Jun 23  
+                                      <span>06:30</span> PM</td>
+                                  <td>Meeting with Rick and Carla
+                                      <p>It is a long established fact that a reader will be distracted by the readable content </p>
+                                  </td>
+                                  <td>778 1718 9393</td>
+                                  <td><button><i class="fa fa-play-circle-o" aria-hidden="true"></i> Start</button>
+                                  <button><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Invite </button>
+                                  <button class="active"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+                                  
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">Wed, Jun 17  
+                                      <span>09:00</span> PM</td>
+                                  <td>Meeting with Lacey 
+                                      <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                  </td>
+                                  <td>784 4824 0130</td>
+                                  <td><button><i class="fa fa-play-circle-o" aria-hidden="true"></i> Start</button>
+                                  <button><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Invite </button>
+                                  <button class="active"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+                                  
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">Tue, Jun 16   
+                                      <span>06:00</span> PM</td>
+                                  <td>Nick arora's Zoom Meeting
+                                      <p>It is a long established fact that a reader will be distracted by the readable content </p>
+                                  </td>
+                                  <td>733 3315 4285</td>
+                                  <td><button><i class="fa fa-play-circle-o" aria-hidden="true"></i> Start</button>
+                                  <button><i class="fa fa-envelope-open-o" aria-hidden="true"></i>  Invite </button>
+                                  <button class="active"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+                                  
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">Tue, Jun 16   
+                                      <span>06:00</span> PM</td>
+                                  <td>My Meeting
+                                      <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                  </td>
+                                  <td>785 4781 2693</td>
+                                  <td><button><i class="fa fa-play-circle-o" aria-hidden="true"></i> Start</button>
+                                  <button><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Invite </button>
+                                  <button class="active"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+                                  
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">Tue, Jun 16   
+                                      <span>06:00</span> PM</td>
+                                  <td>Nick arora's Zoom Meeting
+                                      <p>It is a long established fact that a reader will be distracted by the readable content </p>
+                                  </td>
+                                  <td>733 3315 4285</td>
+                                  <td><button><i class="fa fa-play-circle-o" aria-hidden="true"></i> Start</button>
+                                  <button><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Invite </button>
+                                  <button class="active"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button> 
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">Tue, Jun 16   
+                                      <span>06:00</span> PM</td>
+                                  <td>My Meeting
+                                      <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                  </td>
+                                  <td>785 4781 2693</td>
+                                  <td><button><i class="fa fa-play-circle-o" aria-hidden="true"></i> Start</button>
+                                  <button><i class="fa fa-envelope-open-o" aria-hidden="true"></i> Invite </button>
+                                  <button class="active"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+                                  
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                      
+                            <div class="pastMeetBrows mt-1 mb-5">
+                                <p>Save time by scheduling your meetings directly from your calendar.</p>
+                                <div class="d-flex">
+                                  <a href="#" class="microSoftC"><img src="./assets/img/micro.png">
+                                       Microsoft Outlook Plugin<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Download</a> 
+                                      <a href="#" class="ChromeC"><img src="./assets/img/chrome.png"> Chrome Extension<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Download</a>
+                                </div>
+                      
+                           
+                          </div>
+                      
+                      </div>
+                      </div>
+                      </div>
+                        </div>
+                          
+                        </div>
+                </div>
+                <div id="recordings" class="container tab-pane fade">
+                  <h3>recordings</h3>
+                  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                </div>
+
+                <div id="menu7" class="container tab-pane fade">
+                  <h3>inbox</h3>
+                 <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+               
+               </div>
+                <div id="menu8" class="container tab-pane fade">
+                 <h3>draft</h3>
+                 <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+               </div>
+               <div id="menu9" class="container tab-pane fade">
+                 <h3>sent</h3>
+                 <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+               </div>
+               <div id="account" class="container tab-pane active">
+                <div id="meetingID">
+                <div id="Profile" class="tabcontent profit_Page ">
+   
+                  <div class="row">
+                      <div class="col-md-12 d-flex">
+              
+                          <div class="col-md-2">
+              <img src="./assets/img/profile_userImg.png" alt="profileUser">
+              
+                          </div>
+                          <div class="col-md-10 profileFirst1">
+                              <div class="form-group d-flex">
+                                  <div class="col-md-5 profileFirst">
+                                      <lable><b>First Name</b> </lable>
+                                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Nick" required="required" data-error="Firstname is required.">
+                                  </div>
+                                 <div class="col-md-5 profileFirst">
+                                  <lable><b>Last Name</b> </lable>
+                                  <input id="last_name" type="text" name="name" class="form-control" placeholder="Arora" required="required" data-error="LastName is required.">
+                                 </div>
+                                 
+                                </div>
+                                <div class="form-group d-flex">
+                                  <div class="col-md-6 profileFirst">
+                                      <lable><b>Phone </b> </lable>
+                                      <select class="form-control" id="pettype" required="required" data-error="Select country is required.">
+                                        <option>
+                                          Select country /Region   
+                                        </option>
+                                        <option value="cat">
+                                         3
+                                        </option>
+                                        <option value="cat">
+                                          5
+                                        </option>
+                                        <option value="bird">
+                                          6
+                                        </option>
+                                      </select>
+                                  </div>
+                                 <div class="col-md-4 profileFirst">
+                                  <lable></lable>
+                                  <input id="last_name" type="number" name="name" class="form-control" placeholder="Phone Number" required="required" data-error="Number is required.">
+                                 </div>
+                                 
+                                </div>
+                                <div class="form-group d-flex">
+                                  <div class="col-md-10 profileFirst">
+                                      <lable><b>Department  </b> </lable>
+                                      <input id="department_name" type="text" name="name" class="form-control" placeholder="e.g. Product Manager" required="required" data-error="Department name is required.">
+                                  </div>  
+                                </div>
+                                <div class="form-group d-flex">
+                                  <div class="col-md-10 profileFirst">
+                                      <lable><b>Job Title   </b> </lable>
+                                      <input id="Job_Title " type="text" name="name" class="form-control" placeholder="e.g. Product Manager" required="required" data-error="Job Title is required.">
+                                  </div>  
+                                </div>
+                                <div class="form-group d-flex">
+                                  <div class="col-md-10 profileFirst">
+                                      <lable><b>Company  </b> </lable>
+                                      <input id="Company_name" type="text" name="name" class="form-control" placeholder="Company / Organisation Name " required="required" data-error="Company name is required.">
+                                  </div>  
+                                </div>
+                                <div class="form-group d-flex">
+                                  <div class="col-md-10 profileFirst">
+                                      <lable><b>Location   </b> </lable>
+                                      <input id="Location_1" type="text" name="name" class="form-control" placeholder="e.g. San Jose " required="required" data-error="Location is required.">
+                                  </div>  
+                                </div>
+                                <div class="form-group d-flex">
+                                  <div class="col-md-10 profileFirst">
+                                      <div class=" btnClassmeetPage1 d-flex text-center">
+                                        <button type="button" class="btn btnFirst1">Save  Changes</button>
+                                        <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                                      </div>
+                                  </div>  
+                                
+                                </div>
+                          </div>
+                       
+                      </div>
+                    </div>
+                    <hr class="hrClss">
+                    <div class="row">
+                      <div class="col-md-12 d-flex">
+              
+                          <div class="col-md-3">
+                             <h6 class="profText">Personal Meeting ID</h6>
+                          </div>
+                          <div class="col-md-9 ">
+                            <div class="form-group mt-0 d-flex">
+                             
+                             <div class="col-md-9 profileFirst">
+                           
+                              <input id="last_name" type="number" name="name" class="form-control profGray" placeholder="000   00000   0000 " required="required" data-error="Number is required.">
+                              <lable>Only paid user can choose a Personal Meeting ID. Upgrade</lable>
+                              <div class="custom-control custom-checkbox profGrayBox mt-3">
+                                <input id="profile1" class="custom-control-input" type="checkbox">
+                                <lable for="profile1" class="custom-control-label ">Use Personal Meeting ID for instant meetings </lable>
+                                <div class=" btnClassmeetPage1 d-flex text-center">
+                                  <button type="button" class="btn btnFirst1">Save  Changes</button>
+                                  <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                                </div>
+                              </div>
+                             </div>
+                            </div> 
+                          </div>     
+                          </div>
+                       
+                      </div>
+                   
+                  
+              <hr class="hrClss">
+              <div class="row">
+                <div class="col-md-12 d-flex">
+              
+                    <div class="col-md-3">
+                       <h6 class="profText">Sign-In Email</h6>
+                    </div>
+                    <div class="col-md-9 ">
+                      <div class="form-group mt-0 d-flex">
+                       
+                       <div class="col-md-9 profileFirst">
+                     
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter a new email address" required="required" data-error="email address is required.">
+                        <lable class="pt-1 ">Enter your password to change your sign-in email address.</lable>
+                        <input id="form_name" type="text" name="name" class="form-control mt-2" placeholder="Password" required="required" data-error="password is required.">
+                        <div class=" btnClassmeetPage1 d-flex text-center">
+                          <button type="button" class="btn btnFirst1">Save  Changes</button>
+                          <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                        </div>
+                      
+                       </div>
+                      </div> 
+                    </div>     
+                    </div>
+                 
+                </div>
+              
+              
+              <hr class="hrClss">
+              
+              <div class="row">
+                <div class="col-md-12 d-flex">
+              
+                    <div class="col-md-3">
+                       <h6 class="profText">User Type</h6>
+                    </div>
+                    <div class="col-md-9 ">
+                      <div class="form-group mt-0 d-flex">
+                        <div class="col-md-2 ">
+                          <div class="form-group mt-0 d-flex">
+                           
+                            <lable class="">Basic</lable>
+                           
+                          
+                           </div>
+                          </div> 
+                          <div class="col-md-7 ">
+                            <div class="form-group mt-0 d-flex">
+                             
+                              <lablel class="learnMoreUp">Learn More  Upgrade</lablel>
+                             
+                            
+                             </div>
+                            </div> 
+                    
+                      </div> 
+                    </div>    
+                    
+                    </div>     
+                    </div>
+                 
+                    <hr class="hrClss mt-0">
+              
+              
+                    <div class="row">
+                      <div class="col-md-12 d-flex">
+                    
+                          <div class="col-md-3">
+                             <h6 class="profText">Language</h6>
+                          </div>
+                          <div class="col-md-9 ">
+                            <div class="form-group mt-0 d-flex">
+                             
+                             <div class="col-md-9 profileFirst">
+                           
+                              <input id="form_name" type="text" name="name" class="form-control language1" placeholder="English " required="required" data-error="email address is required.">
+                           
+                              <div class=" btnClassmeetPage1 d-flex text-center">
+                                <button type="button" class="btn btnFirst1">Save  Changes</button>
+                                <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                              </div>
+                            
+                             </div>
+                            </div> 
+                          </div>     
+                          </div>
+                       
+                      </div>
+                      <hr class="hrClss">
+              
+                      <div class="row">
+                        <div class="col-md-12 d-flex">
+                      
+                            <div class="col-md-3">
+                               <h6 class="profText">Date and Time</h6>
+                            </div>
+                            <div class="col-md-9 ">
+                              <div class="form-group mt-0 d-flex">
+                                <div class="col-md-3 ">
+                                  <div class="form-group mt-0 ">
+                                   
+                                    <label class="learnMoreUp mb-3 pt-2">Time Zone </label>
+                             <br>
+                                    <label class="learnMoreUp pt-2">Date Format</label>
+                                    <br>
+                                    <label class="learnMoreUp pt-2">Time Format</label>
+                                   </div>
+                                  </div> 
+                                  <div class="col-md-6">
+                                    <div class="form-group mt-0 floatCls">
+                                     
+                                      <input id="form_name" type="text" name="name" class="form-control mb-2" placeholder=" (GMT+5:30) India" required="required" data-error="email address is required.">
+                                     <br>  <br>  
+                                      <input id="form_name" type="date" name="name" class="form-control language1" placeholder=" (GMT+5:30) India" required="required" data-error="email address is required.">  <label class="learnMoreUp pt-2 pl-1"> Example: 08/15/2011</label> 
+                                      <br>
+                                      <label class="learnMoreUp pt-2">Use 24-hour time</label>
+                                      
+              
+              
+                                     </div>
+                                    </div> 
+                                                        
+                              </div> 
+                              <div class=" btnClassmeetPage1 btnClassmeetPage2 d-flex text-center">
+                                <button type="button" class="btn btnFirst1 btnFirst2 ">Save  Changes</button>
+                                <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                              </div>
+                            </div>    
+                            
+                            </div>     
+                            </div>
+                            <hr class="hrClss">
+              
+                            <div class="row">
+                              <div class="col-md-12 d-flex">
+                            
+                                  <div class="col-md-3">
+                                     <h6 class="profText">Calendar and Contact  Integration</h6>
+                                  </div>
+                                  <div class="col-md-9 ">
+                                    <div class="form-group mt-0 d-flex">
+                                     
+                                     <div class="col-md-9 profileFirst">
+                                     
+                                      <h6 class="profText"> You can integrate with 3rd party services or apps, such as Google, Outlook 
+                                        or Exchange, to sync the calendar and contacts.</h6>
+                                        <h6 class="connectto"> Connect to Calendar and Contact Service</h6>        
+                                     </div>
+                                    </div> 
+                                  </div>     
+                                  </div>
+                               
+                              </div>
+                              <hr class="hrClss mt-1">
+                              <div class="row">
+                                <div class="col-md-12 d-flex">
+                              
+                                    <div class="col-md-3">
+                                       <h6 class="profText">Sign-In Password</h6>
+                                    </div>
+                                    <div class="col-md-9 ">
+                                      <div class="form-group mt-0 d-flex">
+                                       
+                                       <div class="col-md-9 profileFirst">
+                                        <h6 class="profText">Old Password</h6>
+                                        <input id="form_name" type="text" name="name" class="form-control language1" required="required" data-error="email address is required.">
+                                     <br>
+                                     <h6 class="profText">New Password</h6>
+                                     <input id="form_name" type="text" name="name" class="form-control language1" required="required" data-error="email address is required.">
+                                        <div class=" btnClassmeetPage1 d-flex text-center">
+                                          <button type="button" class="btn btnFirst1">Save  Changes</button>
+                                          <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                                        </div>
+                                      
+                                       </div>
+                                      </div> 
+                                    </div>     
+                                    </div>
+                                 
+                                </div>
+                                <hr class="hrClss mt-1">
+                                <div class="row">
+                                  <div class="col-md-12 d-flex">
+                                
+                                      <div class="col-md-3">
+                                         <h6 class="profText">Host Key</h6>
+                                      </div>
+                                      <div class="col-md-9 ">
+                                        <div class="form-group mt-0 d-flex">
+                                         
+                                         <div class="col-md-9 profileFirst ">
+                                           <div class="d-flex">
+                                          <input id="last_name" type="number" name="name" class="form-control whiteNum" placeholder="000   00000   0000 " required="required" data-error="Number is required.">
+                                          <div class=" btnClassmeetPage1 mt-0 d-flex text-center">
+                                            <button type="button" class="btn btnFirst1 btnFirst3">Save  Changes</button>
+                                            <button type="button" class="btn btnFirst canclBtn1 canclBtn2">Cancel</button>
+                                          </div>
+                                        </div>
+                                       <br>
+                                       <h6 class="profText">Host Key is a 6-digit number.</h6>
+                                        </div>
+                                        </div> 
+                                      </div>     
+                                      </div>
+                                   
+                                  </div>
+              
+                                  <hr class="hrClss">
+              
+                                  <div class="row">
+                                    <div class="col-md-12 d-flex">
+                                  
+                                        <div class="col-md-3">
+                                           <h6 class="profText">Signed-In Device</h6>
+                                        </div>
+                                        <div class="col-md-9 ">
+                                          <div class="form-group mt-0 d-flex">
+                                           
+                                           <div class="col-md-9 profileFirst">
+                                           
+                                            <h6 class="profText"> Sign Me Out From All Devices Learn More</h6>
+                                                    
+                                           </div>
+                                          </div> 
+                                        </div>     
+                                        </div>
+                                     
+                                    </div>
+              
+              
+                </div>
+              
+             </div>
+             </div>
+              <div id="payment" class="container tab-pane fade">
+               <h3>payment</h3>
+               <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+             </div>
+             <div id="notifications" class="container tab-pane fade">
+               <h3>notifications</h3>
+               <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+             </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+<!-- accordian -->
+
+<!-- accordian -->
+    </section>
+
+    <!-- center end -->
+
+    <section class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Copyright © 2019 online tutoring. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer_social pull-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- accordian -->
+
+<!-- accordian -->
+     <!-- model -->
+     <script>
+      $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+        modal.find('.modal-title').text('New message to ' + recipient)
+        modal.find('.modal-body input').val(recipient)
+      })
+      
+      
+      
+      </script>
+           <!-- model -->
+
+
+    <script>
+      //hide all tabs first
+      $(".tab-content").hide();
+      //show the first tab content
+      $("#tab-1").show();
+
+      $("#select-box").change(function () {
+        dropdown = $("#select-box").val();
+        //first hide all tabs again when a new option is selected
+        $(".tab-content").hide();
+        //then show the tab content of whatever option value was selected
+        $("#" + "tab-" + dropdown).show();
+      });
+    </script>
+     
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+       <!-- jquery.min.js -->
+       <!-- popper.min.js -->
+       <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+       <!-- popper.min.js -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  
+  </body>
+</html>

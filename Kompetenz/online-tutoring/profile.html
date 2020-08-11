@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Profile | Kompitenz</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <!-- font-custom-->
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <!-- font-custom-->
+        <link href="assets/css/style.css" rel="stylesheet" />
+<!--  -->
+
+</head>
+<body>
+  <section class="top_navBar">
+<div class="container-fluid">
+  <div class="top_navBar2 ">
+<div class="col-md-12 d-flex">
+<div class="col-md-6">
+<div class="d-flex iconsTop1">
+<a href="#" class="mr-3"><i class="fa fa-envelope pr-2" aria-hidden="true"></i> info@komptenz.com</a>
+<a href="#"><i class="fa fa-volume-control-phone pr-2" aria-hidden="true"></i> 0124 -4448080</a>
+</div>
+</div>
+<div class="col-md-6">
+<div class="d-flex iconsTop1 iconsTop">
+  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+  <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+  <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-xs-6 col-lg-2">
+          <h1 class="mb-0 site-logo"><a href="index.html" class="mb-0 logoCls"><img src="./assets/img/logo_kompetenz.png"></a> </h1>
+        </div>
+
+        <div class="col-lg-10 col-md-10 d-none d-lg-block">
+          <nav class="site-navigation position-relative text-right" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block mb-0">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                    <a href="#">Education/Academics</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Interests </a>
+                    <a href="#">Medical </a>
+                    <a href="#">Corporate </a>
+                    <a href="#">IT</a>
+                    </div>
+                </li>
+              <li><a href="features.html" class="nav-link">Trianers</a></li>
+              <li><a href="pricing.html" class="nav-link">Meetings</a></li>
+              <!-- <li><a href="contact.html" class="nav-link">                  </a></li> -->
+              <li><a href="#" class="btn top-btn">SCHEDULE A MEETING</a></li>
+              <li><a href="#" class="btn top-btn active">JOIN A MEETING </a></li>
+              <li><a href="#" class=""><img src="./assets/img/topUserNav.png"></a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+        <div class="col-lg-6 d-inline-block d-lg-none ml-md-0 py-3" style="position: relative; top: 3px;">
+
+          <a href="#" class="burger site-menu-toggle js-menu-toggle" data-toggle="collapse"
+            data-target="#main-navbar">
+            <span></span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+     
+   
+  <section class="meeting" id="meetingID">
+      
+
+  <div class="tab profie_he">
+    
+    <!-- <button class="tablinks mt-3" onclick="openCity(event, 'Profile')" >Profile </button> -->
+    <select class="tablinks mt-3 profileImg" onclick="openCity(event, 'Profile')" name="status"><i class="fa fa-users" aria-hidden="true"></i><option value=""><i class="fa fa-users" aria-hidden="true"></i>Profile</option>
+      <option value="free">Free</option>
+      <option value="paid">Paid</option>
+      </select>
+      <select class="tablinks mt-3 meetImg" onclick="openCity(event, 'Meetings')" name="status" id="defaultOpen">
+        <option value="">Meetings</option>
+        <option value="free"> <button class="tablinks" onclick="openCity(event, 'Webinars')"><img src="./assets/img/navLeft2.png" class="mr-1">Schedule a Meeting</button></option>
+        <option value="paid"> <button class="tablinks" onclick="openCity(event, 'Recordings')"><img src="./assets/img/navLeft2.png" class="mr-1">Past Meeting</button></option>
+        <option value="paid"> <button class="tablinks" onclick="openCity(event, 'Join a Meeting')"><img src="./assets/img/navLeft3.png" class="mr-1">Join a Meeting</button></option>
+        </select>
+    <!-- <button class="tablinks" onclick="openCity(event, 'Meetings')" id="defaultOpen" ><i class="fa fa-users" aria-hidden="true"></i>Meetings</button> -->
+    
+    <!-- <button class="tablinks" onclick="openCity(event, 'Webinars')"><img src="./assets/img/navLeft2.png" class="mr-1">Schedule a Meeting</button>
+    <button class="tablinks" onclick="openCity(event, 'Recordings')"><img src="./assets/img/navLeft2.png" class="mr-1">Past Meeting</button>
+    <button class="tablinks" onclick="openCity(event, 'Join a Meeting')"><img src="./assets/img/navLeft3.png" class="mr-1">Join a Meeting</button> -->
+    <button class="tablinks" onclick="openCity(event, 'Invitations')"><img src="./assets/img/navLeft4.png" class="mr-1">Invitations</button>
+ 
+    <select class="tablinks settngs" onclick="openCity(event, 'Settings')" name="status">
+      <option value="">Settings</option>
+      <option value="free">Account</option>
+      <option value="paid">Payment</option>
+      <option value="paid">Notifications</option>
+      </select>
+  
+    <div class="leftAttndLive">
+<a href="#">
+  Attend Live Training
+
+</a>
+<a href="#">
+  Video Tutorials
+
+</a>
+<a href="#">
+  Knowledge Base
+
+</a>
+
+    </div>
+  </div>
+
+
+  <div id="Profile" class="tabcontent profit_Page ">
+   
+    <div class="row">
+        <div class="col-md-12 d-flex">
+
+            <div class="col-md-2">
+<img src="./assets/img/profile_userImg.png" alt="profileUser">
+
+            </div>
+            <div class="col-md-10 profileFirst1">
+                <div class="form-group d-flex">
+                    <div class="col-md-5 profileFirst">
+                        <lable><b>First Name</b> </lable>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Nick" required="required" data-error="Firstname is required.">
+                    </div>
+                   <div class="col-md-5 profileFirst">
+                    <lable><b>Last Name</b> </lable>
+                    <input id="last_name" type="text" name="name" class="form-control" placeholder="Arora" required="required" data-error="LastName is required.">
+                   </div>
+                   
+                  </div>
+                  <div class="form-group d-flex">
+                    <div class="col-md-6 profileFirst">
+                        <lable><b>Phone </b> </lable>
+                        <select class="form-control" id="pettype" required="required" data-error="Select country is required.">
+                          <option>
+                            Select country /Region   
+                          </option>
+                          <option value="cat">
+                           3
+                          </option>
+                          <option value="cat">
+                            5
+                          </option>
+                          <option value="bird">
+                            6
+                          </option>
+                        </select>
+                    </div>
+                   <div class="col-md-4 profileFirst">
+                    <lable></lable>
+                    <input id="last_name" type="number" name="name" class="form-control" placeholder="Phone Number" required="required" data-error="Number is required.">
+                   </div>
+                   
+                  </div>
+                  <div class="form-group d-flex">
+                    <div class="col-md-10 profileFirst">
+                        <lable><b>Department  </b> </lable>
+                        <input id="department_name" type="text" name="name" class="form-control" placeholder="e.g. Product Manager" required="required" data-error="Department name is required.">
+                    </div>  
+                  </div>
+                  <div class="form-group d-flex">
+                    <div class="col-md-10 profileFirst">
+                        <lable><b>Job Title   </b> </lable>
+                        <input id="Job_Title " type="text" name="name" class="form-control" placeholder="e.g. Product Manager" required="required" data-error="Job Title is required.">
+                    </div>  
+                  </div>
+                  <div class="form-group d-flex">
+                    <div class="col-md-10 profileFirst">
+                        <lable><b>Company  </b> </lable>
+                        <input id="Company_name" type="text" name="name" class="form-control" placeholder="Company / Organisation Name " required="required" data-error="Company name is required.">
+                    </div>  
+                  </div>
+                  <div class="form-group d-flex">
+                    <div class="col-md-10 profileFirst">
+                        <lable><b>Location   </b> </lable>
+                        <input id="Location_1" type="text" name="name" class="form-control" placeholder="e.g. San Jose " required="required" data-error="Location is required.">
+                    </div>  
+                  </div>
+                  <div class="form-group d-flex">
+                    <div class="col-md-10 profileFirst">
+                        <div class=" btnClassmeetPage1 d-flex text-center">
+                          <button type="button" class="btn btnFirst1">Save  Changes</button>
+                          <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                        </div>
+                    </div>  
+                  
+                  </div>
+            </div>
+         
+        </div>
+      </div>
+      <hr class="hrClss">
+      <div class="row">
+        <div class="col-md-12 d-flex">
+
+            <div class="col-md-3">
+               <h6 class="profText">Personal Meeting ID</h6>
+            </div>
+            <div class="col-md-9 ">
+              <div class="form-group mt-0 d-flex">
+               
+               <div class="col-md-9 profileFirst">
+             
+                <input id="last_name" type="number" name="name" class="form-control profGray" placeholder="000   00000   0000 " required="required" data-error="Number is required.">
+                <lable>Only paid user can choose a Personal Meeting ID. Upgrade</lable>
+                <div class="custom-control custom-checkbox profGrayBox mt-3">
+                  <input id="profile1" class="custom-control-input" type="checkbox">
+                  <lable for="profile1" class="custom-control-label ">Use Personal Meeting ID for instant meetings </lable>
+                  <div class=" btnClassmeetPage1 d-flex text-center">
+                    <button type="button" class="btn btnFirst1">Save  Changes</button>
+                    <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                  </div>
+                </div>
+               </div>
+              </div> 
+            </div>     
+            </div>
+         
+        </div>
+     
+    
+<hr class="hrClss">
+<div class="row">
+  <div class="col-md-12 d-flex">
+
+      <div class="col-md-3">
+         <h6 class="profText">Sign-In Email</h6>
+      </div>
+      <div class="col-md-9 ">
+        <div class="form-group mt-0 d-flex">
+         
+         <div class="col-md-9 profileFirst">
+       
+          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter a new email address" required="required" data-error="email address is required.">
+          <lable class="pt-1 ">Enter your password to change your sign-in email address.</lable>
+          <input id="form_name" type="text" name="name" class="form-control mt-2" placeholder="Password" required="required" data-error="password is required.">
+          <div class=" btnClassmeetPage1 d-flex text-center">
+            <button type="button" class="btn btnFirst1">Save  Changes</button>
+            <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+          </div>
+        
+         </div>
+        </div> 
+      </div>     
+      </div>
+   
+  </div>
+
+
+<hr class="hrClss">
+
+<div class="row">
+  <div class="col-md-12 d-flex">
+
+      <div class="col-md-3">
+         <h6 class="profText">User Type</h6>
+      </div>
+      <div class="col-md-9 ">
+        <div class="form-group mt-0 d-flex">
+          <div class="col-md-2 ">
+            <div class="form-group mt-0 d-flex">
+             
+              <lable class="">Basic</lable>
+             
+            
+             </div>
+            </div> 
+            <div class="col-md-7 ">
+              <div class="form-group mt-0 d-flex">
+               
+                <lablel class="learnMoreUp">Learn More  Upgrade</lablel>
+               
+              
+               </div>
+              </div> 
+      
+        </div> 
+      </div>    
+      
+      </div>     
+      </div>
+   
+      <hr class="hrClss mt-0">
+
+
+      <div class="row">
+        <div class="col-md-12 d-flex">
+      
+            <div class="col-md-3">
+               <h6 class="profText">Language</h6>
+            </div>
+            <div class="col-md-9 ">
+              <div class="form-group mt-0 d-flex">
+               
+               <div class="col-md-9 profileFirst">
+             
+                <input id="form_name" type="text" name="name" class="form-control language1" placeholder="English " required="required" data-error="email address is required.">
+             
+                <div class=" btnClassmeetPage1 d-flex text-center">
+                  <button type="button" class="btn btnFirst1">Save  Changes</button>
+                  <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                </div>
+              
+               </div>
+              </div> 
+            </div>     
+            </div>
+         
+        </div>
+        <hr class="hrClss">
+
+        <div class="row">
+          <div class="col-md-12 d-flex">
+        
+              <div class="col-md-3">
+                 <h6 class="profText">Date and Time</h6>
+              </div>
+              <div class="col-md-9 ">
+                <div class="form-group mt-0 d-flex">
+                  <div class="col-md-3 ">
+                    <div class="form-group mt-0 ">
+                     
+                      <label class="learnMoreUp mb-3 pt-2">Time Zone </label>
+               <br>
+                      <label class="learnMoreUp pt-2">Date Format</label>
+                      <br>
+                      <label class="learnMoreUp pt-2">Time Format</label>
+                     </div>
+                    </div> 
+                    <div class="col-md-6">
+                      <div class="form-group mt-0 floatCls">
+                       
+                        <input id="form_name" type="text" name="name" class="form-control mb-2" placeholder=" (GMT+5:30) India" required="required" data-error="email address is required.">
+                       <br>  <br>  
+                        <input id="form_name" type="date" name="name" class="form-control language1" placeholder=" (GMT+5:30) India" required="required" data-error="email address is required.">  <label class="learnMoreUp pt-2 pl-1"> Example: 08/15/2011</label> 
+                        <br>
+                        <label class="learnMoreUp pt-2">Use 24-hour time</label>
+                        
+
+
+                       </div>
+                      </div> 
+                                          
+                </div> 
+                <div class=" btnClassmeetPage1 btnClassmeetPage2 d-flex text-center">
+                  <button type="button" class="btn btnFirst1 btnFirst2 ">Save  Changes</button>
+                  <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                </div>
+              </div>    
+              
+              </div>     
+              </div>
+              <hr class="hrClss">
+
+              <div class="row">
+                <div class="col-md-12 d-flex">
+              
+                    <div class="col-md-3">
+                       <h6 class="profText">Calendar and Contact  Integration</h6>
+                    </div>
+                    <div class="col-md-9 ">
+                      <div class="form-group mt-0 d-flex">
+                       
+                       <div class="col-md-9 profileFirst">
+                       
+                        <h6 class="profText"> You can integrate with 3rd party services or apps, such as Google, Outlook 
+                          or Exchange, to sync the calendar and contacts.</h6>
+                          <h6 class="connectto"> Connect to Calendar and Contact Service</h6>        
+                       </div>
+                      </div> 
+                    </div>     
+                    </div>
+                 
+                </div>
+                <hr class="hrClss mt-1">
+                <div class="row">
+                  <div class="col-md-12 d-flex">
+                
+                      <div class="col-md-3">
+                         <h6 class="profText">Sign-In Password</h6>
+                      </div>
+                      <div class="col-md-9 ">
+                        <div class="form-group mt-0 d-flex">
+                         
+                         <div class="col-md-9 profileFirst">
+                          <h6 class="profText">Old Password</h6>
+                          <input id="form_name" type="text" name="name" class="form-control language1" required="required" data-error="email address is required.">
+                       <br>
+                       <h6 class="profText">New Password</h6>
+                       <input id="form_name" type="text" name="name" class="form-control language1" required="required" data-error="email address is required.">
+                          <div class=" btnClassmeetPage1 d-flex text-center">
+                            <button type="button" class="btn btnFirst1">Save  Changes</button>
+                            <button type="button" class="btn btnFirst canclBtn1">Cancel</button>
+                          </div>
+                        
+                         </div>
+                        </div> 
+                      </div>     
+                      </div>
+                   
+                  </div>
+                  <hr class="hrClss mt-1">
+                  <div class="row">
+                    <div class="col-md-12 d-flex">
+                  
+                        <div class="col-md-3">
+                           <h6 class="profText">Host Key</h6>
+                        </div>
+                        <div class="col-md-9 ">
+                          <div class="form-group mt-0 d-flex">
+                           
+                           <div class="col-md-9 profileFirst ">
+                             <div class="d-flex">
+                            <input id="last_name" type="number" name="name" class="form-control whiteNum" placeholder="000   00000   0000 " required="required" data-error="Number is required.">
+                            <div class=" btnClassmeetPage1 mt-0 d-flex text-center">
+                              <button type="button" class="btn btnFirst1 btnFirst3">Save  Changes</button>
+                              <button type="button" class="btn btnFirst canclBtn1 canclBtn2">Cancel</button>
+                            </div>
+                          </div>
+                         <br>
+                         <h6 class="profText">Host Key is a 6-digit number.</h6>
+                          </div>
+                          </div> 
+                        </div>     
+                        </div>
+                     
+                    </div>
+
+                    <hr class="hrClss">
+
+                    <div class="row">
+                      <div class="col-md-12 d-flex">
+                    
+                          <div class="col-md-3">
+                             <h6 class="profText">Signed-In Device</h6>
+                          </div>
+                          <div class="col-md-9 ">
+                            <div class="form-group mt-0 d-flex">
+                             
+                             <div class="col-md-9 profileFirst">
+                             
+                              <h6 class="profText"> Sign Me Out From All Devices Learn More</h6>
+                                      
+                             </div>
+                            </div> 
+                          </div>     
+                          </div>
+                       
+                      </div>
+
+
+  </div>
+
+
+  
+  <div id="Meetings" class="tabcontent">
+    <h3>Meeting</h3>
+    <h3>Schedule a Meeting</h3>
+    
+  </div>
+  
+  <div id="Webinars" class="tabcontent">
+    <h3>Webinars</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  
+  <div id="Recordings" class="tabcontent">
+    <h3>Recordings</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="Invitations" class="tabcontent">
+    <h3>Invitations</h3>
+    <p>Invitations is the capital of Japan.</p>
+  </div>
+  <div id="Settings" class="tabcontent">
+    <h3>Settings</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  </section>
+    
+
+   
+  
+   
+     
+               <section class="footer-section">
+            <div class="container">
+                <div class="row">
+                   
+                            <div class="col-md-6"><p>Copyright © 2019 online tutoring. All Rights Reserved.</p></div>
+                            <div class="col-md-6">
+                            <div class="footer_social pull-right">
+                            <ul>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></i></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                            </div>
+                            </div>
+
+                </div>
+            </div>
+     </section>
+     
+     <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<!-- jquery.min.js -->
+<!-- popper.min.js -->
+<script type="text/javascript" src="./assets/js/popper.min.js"></script>
+<!-- popper.min.js -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+ 
+
+
+
+</html>
