@@ -1,0 +1,231 @@
+
+function initPricing(){
+
+	if (window.location.pathname.indexOf("/pricing/") >= 0) {
+		initializeSliders();
+	}
+}
+
+function initializeSliders(){
+	var sliders = {
+		'slider-linesofcode' : function() {
+			updateSliderLinesofCode();
+		}
+	};
+
+	var s;
+	for (var i in sliders) {
+		s=document.getElementById(i);
+		if (s)
+			s.oninput = sliders[i];
+  }
+  $('#collapseThree').collapse('hide');
+
+  $('input[type=radio][name=plan-select]').change(function(e) {
+	if (this.value === 'plan-cloud'|| this.value === 'plan-onprem') {
+	  $('#quote-period').text("/yr");
+	  $('#collapseSlide').collapse('show');
+
+	  if (this.value === 'plan-onprem') {
+		  $('#accordion-group-cloud').hide();
+		  $('#accordion-group-onprem').show();
+		  $('#try-button-onprem').show();
+		  $('#try-button-cloud').hide();          
+	  } else if (this.value === 'plan-cloud') {
+		  $('#accordion-group-onprem').hide();
+		  $('#accordion-group-cloud').show();
+		  $('#try-button-onprem').hide();
+		  $('#try-button-cloud').show();
+	  }      
+	} else if (this.value === 'plan-editors-only') {
+	  $('#accordion-group-cloud').hide();
+	  $('#accordion-group-onprem').hide();
+	  $('#collapseSlide').collapse('hide');
+	  $('#collapseThree').collapse('show');
+	  $('#quote-period').text("/mo");
+  }
+		updateTotalPrice();
+	});
+
+	initIDEPlugins();
+	updateTotalPrice();
+
+	$('#requestQuote').on('click', function(){
+		var form = document.getElementById('quote-form');
+		var valid = form.checkValidity();
+		if ( valid === false ) {
+			event.preventDefault();
+			event.stopPropagation();
+		}
+		form.classList.add('was-validated');
+		
+		if (!valid) {
+			return;
+		}
+
+		var form = document.getElementById('quote-form');
+		form.submit();
+	});
+}
+
+function createQuote(){
+	var body="";
+	var plan =$('input[name=plan-select]:checked').val();
+	var slider;
+	var details = {};
+	if (plan === "plan-onprem"){
+		details["plan"] = "Self-Hosted";
+		details["linesofcode"] = $('#slider-linesofcode-nr').text();
+	} else if(plan === "plan-cloud") {
+		details["plan"] = "Cloud";
+		details["linesofcode"] = $('#slider-linesofcode-nr').text();
+	} else if (plan == "plan-editors-only") {
+		details["plan"] = "editors-only";
+	} 
+
+	$('input[name^="quant"]').each(function(i,el) {
+		if ( Number($(el).val())>0  ) {
+			details['editor_' + $(el).data('type')]=$(el).val();
+		}
+	});
+
+	return details;
+}
+
+function initIDEPlugins(){
+	$('.btn-number').click(function(e){
+		e.preventDefault();
+		var fieldName = $(this).attr('data-field');
+		var type      = $(this).attr('data-type');
+		var input = $("input[name='"+fieldName+"']");
+		var currentVal = parseInt(input.val());
+		if (!isNaN(currentVal)) {
+			if(type == 'minus') {
+				if(currentVal > input.attr('min')) {
+					input.val(currentVal - 1).change();
+				} 
+				if(parseInt(input.val()) == input.attr('min')) {
+					$(this).attr('disabled', true);
+				}
+			} else if(type == 'plus') {
+				if(currentVal < input.attr('max')) {
+					input.val(currentVal + 1).change();
+				}
+				if(parseInt(input.val()) == input.attr('max')) {
+					$(this).attr('disabled', true);
+				}
+			}
+		} else {
+				input.val(0);
+		}
+		updateTotalPrice();
+	});
+
+
+	$('.input-number').focusin(function(){
+		$(this).data('oldValue', $(this).val());
+		updateTotalPrice();
+	});
+
+	$('.input-number').change(function() {
+		var minValue =  parseInt($(this).attr('min'));
+		var maxValue =  parseInt($(this).attr('max'));
+		var valueCurrent = parseInt($(this).val());
+		
+		name = $(this).attr('name');
+		if(valueCurrent >= minValue) {
+			$(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+		} else {
+			$(this).val($(this).data('oldValue'));
+		}
+		if(valueCurrent <= maxValue) {
+			$(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+		} else {
+			$(this).val($(this).data('oldValue'));
+		}
+		updateTotalPrice();
+	});
+	$(".input-number").keydown(function (e) {
+		// Allow: backspace, delete, tab, escape, enter and .
+		if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+			// Allow: Ctrl+A
+			(e.keyCode == 65 && e.ctrlKey === true) || 
+			// Allow: home, end, left, right
+			(e.keyCode >= 35 && e.keyCode <= 39)) {
+					// let it happen, don't do anything
+				return;
+		}
+		// Ensure that it is a number and stop the keypress
+		if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+			e.preventDefault();
+		}
+		updateTotalPrice();
+	});	
+}
+
+function updateSlider(slctr, tgt) { 
+	var slider = document.getElementById(slctr);
+	$('#'+tgt).text(slider.value);
+	updateTotalPrice();
+}
+
+function updateSliderLinesofCode() {
+	var slider = document.getElementById("slider-linesofcode");
+	var text=slider.value;
+	if (Number(text)>0) {
+	     text = Number(text) * 40;
+	     if  (text >= 880) {
+		text += "k or more";
+	     }else if  (text >= 1000) {
+		text /=1000;
+		text+= "M or less";
+	     }else {
+	      text+= "k or less";
+	     }
+	}
+	$('#slider-linesofcode-nr').text(text);
+	updateTotalPrice();
+}
+
+function updateTotalPrice(){
+	var plan = $('input[name=plan-select]:checked').val();
+  	var slider, total=0;
+	if (plan == "plan-onprem" || plan == "plan-cloud") {
+		slider = document.getElementById("slider-linesofcode");
+    total+= slider.value * slider.dataset.price;
+	} else if (plan == "plan-editors-only") {
+		total=0;
+  }
+
+  var multi= (plan == "plan-onprem"||plan == "plan-cloud") ? 12 : 1;
+	$('input[name^="quant"]').each(function(i,el) {
+		total+=$(el).val()*$(el).data('price')*multi;	
+  });
+
+  var maxTotal=multi*5000;
+  if (total > maxTotal ) { 
+    $('#dollars').text("Please Contact Us.");
+    $('#calc-total-price').hide();
+    $('#calc-total-contact').show();
+  } else {
+    var dollars=Math.floor(total);
+    dollars=dollars.toLocaleString();
+    $('#dollars').text(dollars);
+    var c = (total - Math.floor(total)).toFixed(2);
+    $('#cents').text(c.substring(c.indexOf('.')+1));
+    $('#calc-total-price').show();
+    $('#calc-total-contact').hide();
+  }
+
+  var details=createQuote();
+  var description="";
+  for (var i in details) {
+	if ( description.length) 
+		description+= "\n";
+	description+= i + ": " + details[i];
+  }
+  var descInput = document.getElementById("msgdescription"); 
+  descInput.value=description;  
+}
+
+jQuery(document).ready(initPricing);

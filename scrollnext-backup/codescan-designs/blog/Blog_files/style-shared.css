@@ -1,0 +1,149 @@
+#pricing-accordion {
+    padding-top: 20px;
+}
+
+.pricing-block {
+    padding: 0px;
+    margin-right: 20px;
+    border: #cbcbff;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.pricing-header {
+    white-space: nowrap;
+    padding: 20px;
+    color: #eeeeee;
+    background-color: #292928;
+    text-align: center;
+    height: 7em;
+}
+
+.pricing-body {
+    padding: 10px;
+    height: 10em;
+}
+
+.pricing-body>ul {
+    text-align: center;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.faq-question {
+    font-weight: bold;
+}
+
+.faq-answer,
+.explanation {
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+.faq-answer {
+    padding-left: 20px;
+}
+
+@media (min-width: 992px) {
+    .first-pricing-block {
+        margin-left: 20px;
+    }
+}
+
+.blog-thumbnail {
+    display: block;
+    top: 50%;
+    left: 50%;
+}
+
+.blog-logo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-left: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 35px;
+}
+
+.blog .article {
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #313d3e;
+    cursor: default;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.blog a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog p a {
+    color: blue;
+}
+
+.blog .meta-info {
+    text-align: left;
+    display: inline;
+}
+
+.blog .meta-info,
+.blog-detail .meta-info {
+    margin: 26px 0 50px 0;
+    text-align: center;
+}
+
+.blog .author-info {
+    font-size: 14px;
+    color: #8b8b8b;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+}
+
+.blog-link {
+    color: black;
+}
+
+.blog .author-info p {
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-outline-primary-cs {
+    color: #3764f0;
+    border-color: #3764f0;
+}
+
+.ruleDesc {
+    background-color: white;
+    padding: 1em;
+}
+
+.ruleKey {
+    float: right;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.ruleName {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.ruleDesc {
+    padding-top: 15px;
+}
+
+.ruleDesc h2 {
+    font-size: 1em;
+}
+
+.ruleDetails {
+    font-size: .9em;
+}

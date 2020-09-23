@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <title>Code Scan</title>
+
+  <meta charset="utf-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ <!-- favicon -->
+
+ <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <!-- favicon -->
+
+  <!-- bootsrap.min.css -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- bootsrap.min.css -->
+
+   <!-- stylesheet.css -->
+
+  <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+ <!-- stylesheet.css -->
+
+ <!-- font-awesome.min.css -->
+
+ <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+
+  <!-- font-awesome.min.css-->
+
+
+
+ <!-- font-custom-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+ <!-- font-custom-->
+
+  <!-- owl.css -->
+
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+  <!-- owl.css -->
+
+   <!-- custom.css -->
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- custom.css -->
+
+   <!-- responshive.css -->
+
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- responshive.css -->
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- vedio links -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+
+
+<style type="text/css">
+
+header .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 0.8rem !important;
+    color: #fff;
+}
+
+/* li.nav-item.Schedule_Demo.quickCLs a {
+    font-weight: bold !important;
+} */
+.nav-link.schedule_demo_link {
+        font-size: 0.8rem !important;
+}
+
+/* li.nav-item.Schedule_Demo.quickCLs:last-child a {
+    color: #ffffff !important;
+    background: transparent !important;
+    border-color: #ffffff !important;
+} */
+.banner_title {
+    font-size: 2rem !important;
+    color: #fff;
+    font-weight: 400;
+}
+.Get_Started{ padding: 0.5rem 3rem;}
+
+.banner_sub_head {
+    color: #ffffff;
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+}
+.hdr_left {
+    color: #ffffff;
+    opacity: 0.8;
+}
+.hdr_right .login_reg a {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.static_code_block{    margin-top: 40px;     top: 0;}
+
+
+
+header .navbar {
+    padding: 1.3rem 1rem;
+}
+
+#banner {
+    background: #101d2d;
+    padding: 2rem 0px;
+}
+
+.imageBox .hoverImg{ right: 0;}
+
+
+.circle_banner{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: url(assets/img/play-button.png);
+      background-size:100%; 
+      box-shadow: 0 0 20px rgba(34,47,69,.4);
+          position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: 50%;
+    display: block;
+    margin-top: -64px;
+    margin-left: 16px;
+      }
+      .wave_banner{
+      position: relative;
+      text-align: center;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      opacity: 0;
+      z-index: -1;
+      pointer-events: none;
+      animation:Waveeffects 2s linear infinite;
+      }
+      @keyframes Waveeffects {
+      from {
+      opacity: 0.6;
+      }
+      to {
+      transform: scale(2);
+      opacity: 0;
+      }
+      }
+
+      </style>
+
+  
+
+</head>
+
+<body>
+
+<!-- header -->
+
+<header class="head-main">
+
+  <div class="htb py-1">
+
+    <div class="container">
+
+    <div class="row align-items-center">
+
+      <div class="col-sm-6 col-12">
+
+        <div class="hdr_left d-flex align-middle"><img src="assets/img/notification.svg">Save the date and get ready for world's largest cloud..</div>
+
+      </div>
+
+      <div class="col-sm-6 col-12">
+
+         <div class="hdr_right">
+
+<ul class="login_reg d-flex  ">
+
+  <li class=""><a href="https://auth.codescan.io/login?state=g6Fo2SBfa2VsTFZiYVl2UkNmUVlQRy1XenFQSlZ5akFZU2F5eqN0aWTZIDlncERSbUlmQU9pUkt3YWVCQS00TzloNlh1bHJYSm8zo2NpZNkgRmJWWkRaaGs4bURjVldaNnA2VGNkQUJRMXJzYU9XVVE&client=FbVZDZhk8mDcVWZ6p6TcdABQ1rsaOWUQ&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.codescan.io%2Foauth2%2Fcallback%2Fauth0&scope=openid&response_type=code"><img src="assets/img/login.svg">Log In</a></li>
+
+  <li>&#124;</li>
+
+ <li class=""><a href="https://auth.codescan.io/login?state=g6Fo2SBfa2VsTFZiYVl2UkNmUVlQRy1XenFQSlZ5akFZU2F5eqN0aWTZIDlncERSbUlmQU9pUkt3YWVCQS00TzloNlh1bHJYSm8zo2NpZNkgRmJWWkRaaGs4bURjVldaNnA2VGNkQUJRMXJzYU9XVVE&client=FbVZDZhk8mDcVWZ6p6TcdABQ1rsaOWUQ&protocol=oauth2&redirect_uri=https%3A%2F%2Fapp.codescan.io%2Foauth2%2Fcallback%2Fauth0&scope=openid&response_type=code"><img src="assets/img/add-user.svg">Sign Up</a></li>
+
+</ul>
+
+       </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+  </div>
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-light text-uppercase" id="myHeader">
+
+  <div class="container">
+
+    <a class="navbar-brand" href="./index.html">
+
+          <img src="./assets/img/logo.svg" alt="logo">
+
+        </a>
+
+    <button class="navbar-toggler navbar-dark custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+
+      <ul class="navbar-nav ml-auto">
+
+       
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            Products
+
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <a class="dropdown-item" href="./products/self-hosted.html">Self Hosted</a>
+
+            <a class="dropdown-item" href="./products/cloud.html">Cloud</a>
+
+            
+
+            <a class="dropdown-item" href="./products/editor-plugins.html">Editor Plugins</a>
+
+          </div>
+
+        </li>
+
+        <li class="nav-item">
+
+          <a class="nav-link" href="./pricing.html">Pricing</a>
+
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            Partners
+
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <a class="dropdown-item" href="./partners/technologies.html">Technology Partners</a>
+
+            <a class="dropdown-item" href="./partners/resellers.html">Resellers</a>   
+
+            <a class="dropdown-item" href="./partners/sign-up.html">Become a Partner</a>
+
+          </div>
+
+        </li>
+
+        <li class="nav-item">
+
+          <a class="nav-link" href="./events.html">Events</a>
+
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+            Resources
+
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <a class="dropdown-item" href="./blog.html">Blog</a>
+            <a class="dropdown-item" href="./resources/case_study.html">Case Study</a>
+
+            <a class="dropdown-item" href="./resources/news.html">News</a>
+
+            
+
+            <a class="dropdown-item" href="./resources/webinars.html">Webinars</a>
+
+          </div>
+
+        </li>
+
+         
+
+        <li class="nav-item">
+
+          <a class="nav-link" href="https://docs.codescan.io/hc/en-us">Docs</a>   
+
+
+
+        </li>
+
+        <li class="nav-item Schedule_Demo quickCLs">
+
+          <a class="nav-link schedule_demo_link p-0" href="./request_a_demo.html">Schedule Demo</a>
+
+        </li>
+        <li class="nav-item Schedule_Demo quickCLs">
+
+          <a class="nav-link schedule_demo_link p-0" href="./reports.html">Quick report</a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+
+
+ 
+
+</header>
+
+<!-- header -->
+
+
+
+<div id="banner" class="resClssBanner">
+
+  
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 col-lg-6">
+
+      <div class="banner_text forResBannerText">
+
+    <h1 class="banner_title">Code <strong>Quality</strong> and <strong>Security</strong> for <strong>Salesforce</strong> Developers
+
+</h1>
+
+<p class="banner_sub_head mb-4 mt-4">Made exclusively for the Salesforce platform, CodeScan’s code analysis solutions provide you with total visibility into your code health. 
+
+</p>
+
+<a href="./request_a_demo.html" class="Get_Started btn">Get Started</a>
+
+</div>
+
+</div>
+
+
+
+<div class="col-md-6 col-lg-6">
+
+  <div class="banner_vdo"><a class="vpop" data-type="youtube" data-id="6xcG6ttMDVY" data-autoplay='true' href="#"> <img src="assets/img/home_video_img2.png"> 
+    <!-- <span class="vdo_icon"><img src="assets/img/vodeo-icon.png"></span> -->
+  <div class="circle_banner">
+      <div class="wave_banner"></div>
+    </div>
+  </a></div>
+
+<!-- copy this stuff and down -->
+
+<div id="video-popup-overlay"></div>
+
+
+
+<div id="video-popup-container">
+
+  <div id="video-popup-close" class="fade">&#10006;</div>
+
+  <div id="video-popup-iframe-container">
+
+    <iframe id="video-popup-iframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+
+  </div>
+
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+  <!-- container  -->
+
+<div id="container">
+
+
+
+  <!-- home sect01 start -->
+
+<section class="home_sec01">
+
+  <div class="container">
+
+ <div class="static_code_block">
+
+   <h6 class="text-center pb-3">The most comprehensive static code analysis solution supporting Salesforce languages and metadata.</h6>
+
+   <div class="row">
+
+     <div class="col-md-3 imgIConSet text-center"><a href="#"><img src="assets/img/apex_logo.png"></a></div>
+
+     <div class="col-md-3 imgIConSet text-center"><a href="#"><img src="assets/img/visualforce_logo.png"></a></div>
+
+     <div class="col-md-3 imgIConSet text-center"><a href="#"><img src="assets/img/markdown_logo.png"></a></div>
+
+     <div class="col-md-3 imgIConSet text-center"><a href="#"><img src="assets/img/lightning-bolt_logo.png"></a></div>
+
+   </div>
+
+ </div>
+
+
+
+  </div>
+
+
+
+</section>
+
+  <!-- home sect01 end -->
+
+
+
+    <!-- home sect02 start  -->
+
+
+<!-- CLIENT BAR -->
+
+
+<section class="home_sec_02 ">
+
+
+
+  <div class="container">
+    <h2 class="heading main_title text-center mt-5 mt-sm-0"><span>Trusted by</span></h2>
+<!-- <h2 class="main_title text-center mb-5 mt-5">Companies Using CodeScan</h2> -->
+
+    <div class="tursted main_title">
+
+     
+
+  <div id="intro" class="owl-carousel owl-theme tursted_Carousel">
+
+  
+
+      <div class="item imageBox">
+        <div class="imageInn">
+          <img src="assets/img/B&W/7.jpg" class="">
+        <div class="hoverImg">
+          <img src="assets/img/B&W/flag/abb.jpg" class="">
+        </div>
+      </div> 
+    </div>
+    <div class="item imageBox">
+      <div class="imageInn">
+        <img src="assets/img/B&W/8.jpg" class="">
+      <div class="hoverImg">
+        <img src="assets/img/B&W/flag/ge.jpg" class="">
+      </div>
+    </div> 
+  </div>
+  <div class="item imageBox">
+    <div class="imageInn">
+      <img src="assets/img/B&W/10.jpg" class="">
+    <div class="hoverImg">
+      <img src="assets/img/B&W/flag/hitachi.jpg" class="">
+    </div>
+  </div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/9.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/nova.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/11.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/eon.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/3.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/COCACOLA.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/12.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/aldi.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/13.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/flag.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/14.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/fidelis.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/15.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/cog.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/16.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/bank of america.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/17.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/sales.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/18.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/toyota.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/4.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/NESPRESSO.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/19.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/morgan.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/20.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/new-york.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/21.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/elisa.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/22.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/ab.jpg" class="">
+  </div>
+</div> 
+</div>
+
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/1.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/IBM.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/5.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/BABY-JOHN.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/24.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/telstra.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/25.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/deloitte.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/6.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/va.jpg" class="">
+  </div>
+</div> 
+</div>
+
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/26.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/cargill.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/27.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/refnit.jpg" class="">
+  </div>
+</div> 
+</div>
+<div class="item imageBox">
+  <div class="imageInn">
+    <img src="assets/img/B&W/28.jpg" class="">
+  <div class="hoverImg">
+    <img src="assets/img/B&W/flag/bp.jpg" class="">
+  </div>
+</div> 
+</div>
+
+    <!-- <div class="item ibmClass"><img src="assets/img/ibm_lgo.png"></div> -->
+
+    <!-- <div class="item hoverIconsCls"><img src="assets/img/B&W/7.jpg"></div>
+    
+    <div class="item"><img src="assets/img/B&W/8.jpg"></div> -->
+
+    <!-- <div class="item"><img src="assets/img/B&W/10.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/9.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/11.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/3.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/12.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/13.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/14.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/15.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/16.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/17.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/18.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/4.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/19.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/20.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/21.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/22.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/1.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/5.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/24.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/25.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/6.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/26.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/27.jpg"></div>
+
+    <div class="item"><img src="assets/img/B&W/28.jpg"></div> -->
+
+
+
+    <!-- old -->
+    <!-- <div class="item"><img src="assets/img/ing_logo.png"></div>
+
+    <div class="item"><img src="assets/img/coka_logo.png"></div>
+
+    <div class="item"><img src="assets/img/cisco_logo.png"></div>
+
+    <div class="item"><img src="assets/img/aegon_logo.png"></div>
+
+    <div class="item"><img src="assets/img/unilever_logo.png"></div>
+
+    <div class="item"><img src="assets/img/phillips_logo.png"></div>
+
+    <div class="item"><img src="assets/img/accenture_logo.png"></div> -->
+
+  
+
+  </div>
+
+
+
+    </div>
+
+    
+
+  </div>
+
+  
+
+</section>
+
+<!-- CLIENT BAR ENDED -->
+
+  <!-- home sect02 end  -->
+
+<!-- our Products -->
+
+<section class="our-product text-center">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="product_head">
+
+        <h2><span>Our Products</span></h2>
+
+              </div> </div>
+
+              <div class="row"> 
+
+              <div class="col-md-4"> <div class="product_w1"><img src="assets/img/product-1.png" alt=""/>
+
+                <h3>SELF HOSTED</h3><p>Check your code for security and quality with the most extensive database for the Salesforce platform.</p><a href="./products/self-hosted.html" class="read_info">Learn More</a></div></div>
+
+              <div class="col-md-4"><div class="product_w1"><img src="assets/img/product-2.png" alt=""/>
+                <!-- Get all the benefit of our Self Hosted service without the need of servers and infrastructure. -->
+                <h3>CLOUD</h3><p>Get all the benefits of our Self Hosted service without the need of servers or internal infrastructure.</p><a href="./products/cloud.html" class="read_info">Learn More</a></div></div>
+
+              <div class="col-md-4"><div class="product_w1"><img src="assets/img/product-3.png" alt=""/>
+
+                <h3>EDITOR PLUGINS</h3><p>Plug in CodeScan to your favorite editor and get real-time feedback while you code.</p><a href="./products/editor-plugins.html" class="read_info">Learn More</a></div></div>
+
+              
+
+              </div>
+
+   
+
+  </div>
+
+</section>
+<!-- our products ended -->
+
+
+  <!-- home sect04 start  -->
+
+  <section class="codescan text-center">
+
+    <div class="container">
+  
+      <div class="row">
+  
+        <div class="col-md-12">
+  
+          <h2 class="heading"><span>Why CodeScan</span></h2>
+  
+        </div>
+  
+      </div>
+  
+      <div class="row">
+  
+    <div class="col-lg-10 offset-lg-1">
+  
+    <div class="row">
+  
+        <div class="col-md-3">
+  
+          <div class="scan-content">
+  
+            <p><img src="assets/img/code.png" /></p>
+  
+            <h3>DEFINE CODE STANDARDS</h3>
+  
+            <p>Maintain the quality of your code according to best practices.</p>
+  
+          </div>
+  
+        </div>
+  
+        <div class="col-md-3">
+  
+          <div class="scan-content">
+  
+            <p><img src="assets/img/enforce.png" /></p>
+  
+            <h3>CONTROL CODE<br> Quality</h3>
+  
+            <p>Customize your quality gates’ metrics and minimize code complexity throughout the development process.</p>
+  
+          </div>
+  
+        </div>
+  
+        <div class="col-md-3">
+  
+          <div class="scan-content">
+  
+            <p><img src="assets/img/gain.png" /></p>
+  
+            <h3>Reduce Technical Debt</h3>
+  
+            <p>Track your technical debt to improve your code quality and efficiency.</p>
+  
+          </div>
+  
+        </div>
+  
+        <div class="col-md-3">
+  
+          <div class="scan-content">
+  
+            <p><img src="assets/img/Increase-development.png" /></p>
+  
+            <h3>Increase Development Productivity</h3>
+  
+            <p>Reduce time spent on code review through review automation.</p>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  
+    </div>
+  
+    </div>
+  
+  </section>
+  
+  
+  
+    <!-- home sect04 end  -->
+
+<!-- FEATURE COMPANIES -->
+<section class="feature">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-12">
+
+        <h2 class="heading"><span>Features Comparison</span></h2>
+
+        <div class="table-feature">
+
+          <table>
+
+            <tr>
+
+              <th>&nbsp;</th>
+
+              <th>CodeScan’s Solutions</th>
+
+              <th>Other Static Code Analysis Solutions</th>
+
+            </tr>
+
+            <tr>
+
+              <td>More than 350 rules for code quality and security</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>
+
+            </tr>
+
+            <tr>
+
+              <td>100% Salesforce focused</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>            </tr>
+
+            <tr>
+
+              <td>Supports 100% of the Salesforce platform</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>            </tr>
+
+            <tr>
+
+              <td>Security review compliant</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>            </tr>
+
+            <tr>
+
+              <td>Fully integrated</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>            </tr>
+
+            <tr>
+
+              <td>IDE plugins available</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>            </tr>
+
+            <tr>
+
+              <td>Simple price structure</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>            </tr>
+
+            <tr>
+
+              <td>Top rated app on AppExchange</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>            </tr>
+
+            <tr>
+
+              <td>California, USA based</td>
+
+              <td><i class="fa fa-check  text-success"></i></td>
+
+              <td><i class="fa fa-times "></i></td>            </tr>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- FEATURE COMAPNIES ENDED -->
+
+
+
+ <!-- ROI SECTION -->
+ <section class="tech-debt">
+  <div class="container">
+    <div class="row">
+	<div class="col-lg-12">
+	        <h2 class="heading resHead"><span>ROI</span></h2>
+	</div> 
+	</div>
+	
+	<div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="debt-content">
+          <h2 class="mb-3">Reduce Technical Debt.</h2>
+          <h5>CodeScan’s solutions are proven to:</h5>
+          <ul>
+            <li>Decrease the creation of new technical debt</li>
+            <li>Provide an additional source of quality control</li>
+            <li>Reduce technical debt from scan to scan</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="debt-img">
+          <!-- <img src="assets/img/reduce_img.png"> -->
+          <img src="assets/img/ROI.png">
+
+        </div>
+      </div>
+    </div>
+	</div>
+</section>
+<!-- ROI SECTION END -->
+
+
+<section class="our-results mb-5 pt-sm-0 mb-sm-0 mb-xs-0">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <h2 class="heading main_title text-center"><span>Our Accomplishments</span></h2>
+        <h2></h2>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+ 
+        <div class="res-content">
+         <div class="d-flex justify-content-center">
+          <h3 class="counter" data-count="100">0</h3><h1>B</h1>
+         </div>
+          
+
+          <p>Lines of code scanned</p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="res-content">
+          <div class="d-flex justify-content-center">
+            <h3 class="counter" data-count="75">0</h3><h1>M</h1>
+           </div>
+         
+
+          <p>Code duplication resolved</p>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="res-content">
+          <div class="d-flex justify-content-center">
+            <h3 class="counter" data-count="1">0</h3><h1>M</h1>
+           </div>
+        
+
+          <p>Vulnerabilities detected</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+  <!-- home sect03 start -->
+
+
+
+<section class="partners-section contentSlider">
+
+  <h2 class="heading main_title text-center mt-4"><span>Trusted by more than 1000 developers</span></h2>
+    <!-- <h2 class="main_title text-center mb-5 mt-3"></h2> -->
+
+  <div class="container inner-content">
+
+
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+      <div class="slideshow-container">
+
+
+
+        <div class="mySlides">
+
+          <div class="inner-part ">
+
+            <p>“It is still one of the best and reliable tool that we are utilizing across all our SalesForce Orgs and multiple projects”<br> – Yuri Conrat, <b>PSEG</b>, <i>New York</i></p>
+
+          </div>
+
+          <div class="inner-part ">
+
+            <p>“CodeScan has been extremely collaborative in helping define best practices as well as taking our input for improvements. Highly recommend this solution”<br> – Jan Aertgeerts, <b>Johnson & Johnson</b>, <i>Belgium</i></p>
+
+          </div>
+
+          <div class="inner-part">
+
+            <p>“Codescan not only helped us identifying bugs & vulnerabilities in the code, but also helped us reducing Tech Debt to a great extent.”<br> -Amresh Vijay, <b>Accenture</b>, <i>India</i></p>
+
+        </div>
+
+        </div>
+
+        
+
+        <div class="mySlides">
+
+          <div class="inner-part ">
+
+            <p>“It's helping us applying our development standardization by identifying code and security vulnerabilities earlier in the process before we deploy to production - (VF, Apex, LC, LWC, Javascript and much more ...) and it's also considerably improving and simplifying our code review process. “<br> – Miguel Coimbra, <b>Salesforce</b>, <i>Belgium</i></p>
+
+          </div>
+
+          <div class="inner-part ">
+
+            <p>“This tool is great if you are looking for quality assurance for your code. It provides security and other insights into the quality of your code. Very helpful to lear best practices and it relieves a lot off of manual code reviews!”<br> – Paola Cecuk, <b>eBay</b>, <i>Netherlands</i></p>
+
+          </div>
+
+          <div class="inner-part">
+
+            <p>“It is a time saver for the manual code review process by ensuring that most issues that can easily be detected are caught up front so we can focus on business logic and design issues during the manual review.”<br> – Andrew Yoder, <b>MedPro</b>, <i>Indiana</i></p>
+
+        </div>
+
+        </div>
+
+        
+
+        <div class="mySlides">
+
+          <div class="inner-part ">
+
+            <p>“We are working with the cloud tool of CodeScan, and we really appreciate its reporting capabilities, where we can track and monitor our developments. The Support is also great, and ready to assist you immediately.”<br> – Stela Vula, <b>MAN Engines</b>, <i>Germany</i></p>
+
+          </div>
+
+          <div class="inner-part ">
+
+            <p>“We were looking for a tool to help us improve the code quality with static code analysis and found Codescan which does the job perfectly for us! Our developers are also using the plugin in IDE which is highly recommended to use also.”<br> – Tomi Korpela, <b>Elisa</b>, <i>Finland</i></p>
+
+          </div>
+
+          <div class="inner-part">
+
+            <p>“The support team is excellent, always quick to respond to my questions.” <br> – Ryan Bestul, <b>SOS</b>, <i>Texas</i></p>
+
+        </div>
+
+        </div>
+
+        
+
+        <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+
+        <a class="next" onclick="plusSlides(1)">❯</a> -->
+
+        
+
+        </div>
+
+        
+
+        <div class="dot-container">
+
+          <span class="dot" onclick="currentSlide(1)"></span> 
+
+          <span class="dot" onclick="currentSlide(2)"></span> 
+
+          <span class="dot" onclick="currentSlide(3)"></span> 
+
+        </div>
+
+           
+
+            
+
+        
+
+     
+
+      </div>
+
+        <div class="col-md-6">
+
+          <div class="app-exchange">
+
+            <h2>With more than 350 rules, CodeScan<br> is the #1 code analysis solution on<br> AppExchange</h2>
+
+            <p><img src="assets/img/rating.jpg" class="rating" alt="Rating"></p>
+
+            <p><img src="assets/img/salesforce.jpg" class="reg" alt="img"></p>
+
+          </div>
+
+        </div>
+
+      
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- home sect03 end -->
+
+
+
+ 
+
+
+
+
+<section class="customer-survey text-center mt-5">
+
+  <div class="container">
+
+    
+
+      <div class="survey">
+<div class="row">
+        <h2 class="heading main_title"><span>Customer Survey</span></h2>
+</div>
+<div class="row">
+  <div class="col-md-12 col-sm-12"><img src="assets/img/Survey.png"></div>
+</div>
+<!-- <div class="row">
+        <div class="col-md-3 col-sm-6"><img src="assets/img/circle1.png"><p class="survayPara">SAY CODESCAN HELPS DEVELOPERS WRITE HIGHER QUALITY CODE</p></div>
+
+      <div class="col-md-3 col-sm-6"><img src="assets/img/circle2.png"><p class="survayPara">SAY THEY ARE<br>LIKELY TO <br>CONTINUE USING CODESCAN </p></div>
+
+        <div class="col-md-3 col-sm-6"><img src="assets/img/cicle3.png"><p class="survayPara">SAY CODESCAN HELPS THEM <br>REDUCE TECHNICAL DEBT </p></div>
+
+        <div class="col-md-3 col-sm-6"><img src="assets/img/circle4.png"><p class="survayPara">SAY CODESCAN MAKES THEIR CODE REVIEW PROCESS MORE PRODUCTIVE  </p></div>
+
+      </div> -->
+ </div>
+    
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<section class="newsletter">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-6">
+
+        <h2>Join Our Newsletter</h2>
+
+              </div> <div class="col-sm-12 col-md-6">
+
+       <div class="news_form"><input type="text" placeholder="Enter your email address" class="entrEmailC1" ><input type="button" value="Subscribe" class="entrEmailC2"></div>
+
+              </div></div>
+
+              
+
+             
+
+
+
+   
+
+  </div>
+
+</section>
+
+
+
+<section class="footer">
+<div class="footIn">
+
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-3">
+
+        <h2>Quick Links</h2>
+
+        <ul>
+
+        <li><a href="./blog.html">Blog</a></li>
+
+        <li><a href="./contact.html">Contact Us</a></li>
+
+        <li><a href="./privacy-policy.html">Privacy Policy</a></li></ul>
+
+              </div> 
+
+              
+
+               <div class="col-md-3">
+
+        <h2>Products</h2>
+
+        <ul>
+
+          <li><a href="./products/self-hosted.html">Self Hosted</a></li>
+
+          <li><a href="./products/cloud.html">Cloud</a></li>
+
+
+          <li><a href="./products/editor-plugins.html">Editor Plugins</a></li></ul>
+
+                </div> 
+
+                
+
+                 <div class="col-md-3">
+
+          <h2>Partners</h2>
+
+          <ul>
+
+          <li><a href="./partners/technologies.html">Technology</a></li>
+
+          <li><a href="./partners/resellers.html">Resellers</a></li>
+
+          <li><a href="./partners/sign-up.html">Become a partner</a></li></ul>
+
+              </div> 
+
+              
+
+               <div class="col-md-3">
+
+        <h2>Contact Us</h2>
+
+        <div class="foot_info"><p><img src="assets/img/loc_icon.png" alt=""/>11855 Sorrento Valley Road, San Diego, CA 92121</p>
+
+        <p><img src="assets/img/phone_icon.png" alt=""/><a href="tel:+18582164315">+1 (858) 216-4315</a></p>
+
+         <p><img src="assets/img/mail_icon.png" alt=""/><a href="mailto:support@codescan.io">support@codescan.io</a></p>
+
+        </div>
+
+        
+
+              </div> 
+
+              
+
+               
+
+  </div>
+</div>
+</div>
+<div class="ft-bottom">
+<div class="container">
+  <div class="row w1">
+    <div class="col-md-6 col-sm-6 col-xs-4"><div class="foot_social text-left"><p class="w4">Copyright 2020 CodeScan Enterprises. All rights reserved.</p></div></div>
+    <div class="col-md-6 col-sm-6 col-xs-8"><div class="foot_social"><a href="https://www.facebook.com/CodeScanForSalesforce/"><i class="fa fa-facebook-f"></i></a><a href="https://twitter.com/CodeScanforSFDC"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/company/2812121/admin/"><i class="fa fa-linkedin"></i></a></div></div>
+  </div>
+  </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- COUNTER SCript -->
+<script>$('.counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 8000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+  
+  
+
+});
+</script>
+
+<!-- COUNTER SCript END -->
+<!-- vedio  -->
+
+<script>
+
+  $(".vpop").on('click', function(e) {
+ 
+   e.preventDefault();
+ 
+   $("#video-popup-overlay,#video-popup-iframe-container,#video-popup-container,#video-popup-close").show();
+ 
+   
+ 
+   var srchref='',autoplay='',id=$(this).data('id');
+ 
+   if($(this).data('type') == 'vimeo') var srchref="//player.vimeo.com/video/" ;
+ 
+   else if($(this).data('type') == 'youtube') var srchref="https://dms.licdn.com/playback/C4D05AQGhCCtwOF5Oqw/45c52dd22c8147aabab79571da33a785/feedshare-webm_2000/1479930618324-l6cv8a?e=1593082800&v=beta&t=UhDymbWEw1wc2D8JNUve0yg4N-dNcb7uumghmk4TZQg";
+ 
+   
+ 
+   if($(this).data('autoplay') == true) autoplay = '?autoplay=1';
+ 
+   
+ 
+   $("#video-popup-iframe").attr('src', srchref);
+ 
+   
+ 
+   $("#video-popup-iframe").on('load', function() {
+ 
+     $("#video-popup-container").show();
+ 
+   });
+ 
+ });
+ 
+ 
+ 
+ $("#video-popup-close, #video-popup-overlay").on('click', function(e) {
+ 
+   $("#video-popup-iframe-container,#video-popup-container,#video-popup-close,#video-popup-overlay").hide();
+ 
+   $("#video-popup-iframe").attr('src', '');
+ 
+ });
+ 
+ 
+ 
+ /* 
+ 
+ minified
+ 
+ 
+ 
+ $(".vpop").on("click",function(o){o.preventDefault(),$("#video-popup-iframe-container,#video-popup-container,#video-popup-close").show();var p="",e="",i=$(this).data("id");if("vimeo"==$(this).data("type"))var p="//player.vimeo.com/video/";else if("youtube"==$(this).data("type"))var p="https://www.youtube.com/embed/";1==$(this).data("autoplay")&&(e="?autoplay=1"),$("#video-popup-iframe").attr("src",p+i+e),$("#video-popup-iframe").on("load",function(){$("#video-popup-overlay, #video-popup-container").show()})}),$("#video-popup-close, #video-popup-overlay").on("click",function(o){$("#video-popup-iframe-container,#video-popup-container,#video-popup-close").hide(),$("#video-popup-iframe").attr("src","")});
+ 
+ */
+ 
+   </script>
+ 
+ <!-- vedio  END -->
+ 
+
+<!-- contentSLider -->
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+
+  
+  </script>
+
+<!-- contentSLider END -->
+
+
+
+<!-- 
+
+  AUTOMATED
+<script>
+
+  
+
+  var slideIndex = 0;
+
+showSlides();
+
+
+
+function showSlides() {
+
+  var i;
+
+  var slides = document.getElementsByClassName("mySlides");
+
+  var dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+
+    slides[i].style.display = "none";  
+
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  for (i = 0; i < dots.length; i++) {
+
+    dots[i].className = dots[i].className.replace(" active", "");
+
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+
+  dots[slideIndex-1].className += " active";
+
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+
+}
+
+  </script> -->
+
+  <!-- container  -->
+
+
+
+<!-- footer start -->
+
+
+
+<!-- footer end -->
+
+
+
+<!-- owl.carousel.min.js-->
+
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+<!-- owl.carousel.min.js -->
+
+<!-- jquery.min.js -->
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+<!-- jquery.min.js -->
+
+<!-- popper.min.js -->
+
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+
+<!-- popper.min.js -->
+
+<!-- bootsrap.min.js-->
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+<!-- bootsrap.min.js -->
+
+<!-- main.js-->
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+<!-- main.js -->
+
+
+
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+
+
+  $(document).ready(function() {
+
+             $('.tursted_Carousel').owlCarousel({
+
+                nav: true,
+                autoplay: true,
+                autoPlaySpeed: 1000,
+        autoPlayTimeout: 1000,
+        autoplayHoverPause: true,
+                loop: true,
+
+                margin: 10,
+
+                responsiveClass: true,
+
+                responsive: {
+
+                  0: {
+
+                    items: 1,
+
+                    nav: true
+
+                  },
+
+                  480: {
+
+                    items: 1,
+
+                    nav: false
+
+                  },
+
+                  768: {
+
+                    items: 7,
+
+                    nav: true,
+
+                    loop: false,
+
+                    margin: 20
+
+                  }
+
+                }
+
+              })
+
+            })
+
+</script>
+
+
+
+</body>
+
+</html>
+
